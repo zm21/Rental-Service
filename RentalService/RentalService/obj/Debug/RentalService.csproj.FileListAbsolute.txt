@@ -1,0 +1,14 @@
+D:\Mikola\ШАГ\2-й семестр\Windows Forms\kyrsova\RentalService\RentalService\bin\Debug\RentalService.exe.config
+D:\Mikola\ШАГ\2-й семестр\Windows Forms\kyrsova\RentalService\RentalService\bin\Debug\RentalService.exe
+D:\Mikola\ШАГ\2-й семестр\Windows Forms\kyrsova\RentalService\RentalService\bin\Debug\RentalService.pdb
+D:\Mikola\ШАГ\2-й семестр\Windows Forms\kyrsova\RentalService\RentalService\obj\Debug\RentalService.csprojAssemblyReference.cache
+D:\Mikola\ШАГ\2-й семестр\Windows Forms\kyrsova\RentalService\RentalService\obj\Debug\RentalService.Form1.resources
+D:\Mikola\ШАГ\2-й семестр\Windows Forms\kyrsova\RentalService\RentalService\obj\Debug\RentalService.Properties.Resources.resources
+D:\Mikola\ШАГ\2-й семестр\Windows Forms\kyrsova\RentalService\RentalService\obj\Debug\RentalService.csproj.GenerateResource.cache
+D:\Mikola\ШАГ\2-й семестр\Windows Forms\kyrsova\RentalService\RentalService\obj\Debug\RentalService.csproj.CoreCompileInputs.cache
+D:\Mikola\ШАГ\2-й семестр\Windows Forms\kyrsova\RentalService\RentalService\obj\Debug\RentalService.exe
+D:\Mikola\ШАГ\2-й семестр\Windows Forms\kyrsova\RentalService\RentalService\obj\Debug\RentalService.pdb
+D:\Mikola\ШАГ\2-й семестр\Windows Forms\kyrsova\RentalService\RentalService\bin\Debug\Guna.UI2.dll
+D:\Mikola\ШАГ\2-й семестр\Windows Forms\kyrsova\RentalService\RentalService\obj\Debug\RentalService.csproj.CopyComplete
+D:\Mikola\ШАГ\2-й семестр\Windows Forms\kyrsova\RentalService\RentalService\bin\Debug\Guna.UI.dll
+D:\Mikola\ШАГ\2-й семестр\Windows Forms\kyrsova\RentalService\RentalService\obj\Debug\RentalService.MsgBox.resources
