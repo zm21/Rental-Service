@@ -72,6 +72,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RentalSerivce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RentalSerivce.Designer.cs">
+      <DependentUpon>RentalSerivce.cs</DependentUpon>
+    </Compile>
     <Compile Include="Users\Admin.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -103,7 +109,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RentalSerivce.resx">
+      <DependentUpon>RentalSerivce.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -119,6 +129,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="rentalservice.ico" />
+    <None Include="Resources\carkey.png" />
+    <None Include="Resources\listsearch.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\car.png" />
+    <None Include="Resources\Home.png" />
+    <None Include="Resources\menulogo.jpg" />
+    <None Include="Resources\lease.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
