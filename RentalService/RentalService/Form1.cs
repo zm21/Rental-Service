@@ -18,17 +18,12 @@ namespace RentalService
         {
             pnLogin.BringToFront();
             pnLogin.Hide();
-            //gunaTransition1.Hide(pnLogin);
-            //pnSignUP.BringToFront();
-            //pnSignUP.Show();
-            //gunaTransition1.Show(pnSignUP);
         }
 
         private void bt_goto_Login_Click(object sender, EventArgs e)
         {
             pnLogin.BringToFront();
             pnLogin.Show();
-            //gunaTransition1.Show(pnLogin);
         }
 
         private void regBt_signUp_Click(object sender, EventArgs e)
@@ -99,6 +94,7 @@ namespace RentalService
                 using (var writer = new StreamWriter("emails/emails", true))
                     writer.WriteLine(regTxtBox_email.Text);
                 User user = new User(regTxtBox_login.Text, regTxtBox_email.Text, regTxtBox_confirmPasswd.Text);
+                user.Serialize();
             }
         }
 
@@ -108,6 +104,20 @@ namespace RentalService
             {
                 MsgBox msgBox = new MsgBox("Authorization error", "No user with this login was found!");
                 msgBox.ShowDialog();
+            }
+            else
+            {
+                User user = new User();
+                user.Deserialize("users/" + logTxtBox_login.Text);
+                if(user.Passwd==logTxtBox_passwd.Text)
+                {
+
+                }
+                else
+                {
+                    MsgBox msgBox = new MsgBox("Authorization error", "Wrong password!");
+                    msgBox.ShowDialog();
+                }
             }
         }
     }

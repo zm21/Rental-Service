@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Drawing;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace RentalService.Users
 {
@@ -29,27 +30,27 @@ namespace RentalService.Users
                 writer.Write(ID + 1);
         }
         public User() { }
-        public void SaveToFile()
+        public void Serialize()
         {
-            using (var writer = new StreamWriter("users/" + Login))
+            BinaryFormatter binaryFormatter = new BinaryFormatter();
+            using (Stream fStream = File.Create("users/" + Login))
             {
-                writer.WriteLine(ID);
-                writer.WriteLine(Login);
-                writer.WriteLine(Email);
-                writer.WriteLine(Passwd);
-                writer.WriteLine(Balance);
+                binaryFormatter.Serialize(fStream, this);
             }
         }
-        public void LoadFromFile(string path)
+        public void Deserialize(string path)
         {
-            using (var reader = new StreamReader(path))
+            BinaryFormatter binaryFormatter = new BinaryFormatter();
+            User user = new User();
+            using (Stream fStream = File.OpenRead(path))
             {
-                ID = int.Parse(reader.ReadLine());
-                Login = reader.ReadLine();
-                Email  = reader.ReadLine();
-                Passwd  = reader.ReadLine();
-                Balance = decimal.Parse(reader.ReadLine());
+                user = (User)binaryFormatter.Deserialize(fStream);
             }
+            this.ID = user.ID;
+            this.Login = user.Login;
+            this.Email = user.Email;
+            this.Passwd = user.Passwd;
+            this.Balance = user.Balance;
         }
         public void ShowBalance() { Console.WriteLine($"Your balance: {Balance} UAH"); }
         public void ReplishBalance(decimal balance) { Balance += balance; }
