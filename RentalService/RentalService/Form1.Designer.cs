@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Guna.UI.Animation.Animation animation1 = new Guna.UI.Animation.Animation();
+            Guna.UI.Animation.Animation animation2 = new Guna.UI.Animation.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pnLogin = new Guna.UI2.WinForms.Guna2Panel();
             this.bt_goto_SignUp = new Guna.UI.WinForms.GunaButton();
@@ -151,7 +151,7 @@
             this.logTxtBox_passwd.FocusedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(41)))), ((int)(((byte)(86)))));
             this.logTxtBox_passwd.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.logTxtBox_passwd.FocusedForeColor = System.Drawing.Color.White;
-            this.logTxtBox_passwd.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.logTxtBox_passwd.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.logTxtBox_passwd.ForeColor = System.Drawing.Color.White;
             this.logTxtBox_passwd.Location = new System.Drawing.Point(491, 282);
             this.logTxtBox_passwd.MaxLength = 12;
@@ -184,7 +184,7 @@
             this.logTxtBox_login.FocusedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(41)))), ((int)(((byte)(86)))));
             this.logTxtBox_login.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.logTxtBox_login.FocusedForeColor = System.Drawing.Color.White;
-            this.logTxtBox_login.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.logTxtBox_login.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.logTxtBox_login.ForeColor = System.Drawing.Color.White;
             this.logTxtBox_login.Location = new System.Drawing.Point(491, 188);
             this.logTxtBox_login.MaxLength = 10;
@@ -247,22 +247,22 @@
             // 
             this.gunaTransition1.AnimationType = Guna.UI.Animation.AnimationType.Custom;
             this.gunaTransition1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 1;
-            animation1.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 2F;
-            animation1.TransparencyCoeff = 0F;
-            this.gunaTransition1.DefaultAnimation = animation1;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 1;
+            animation2.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 2F;
+            animation2.TransparencyCoeff = 0F;
+            this.gunaTransition1.DefaultAnimation = animation2;
             // 
             // pnSignUP
             // 
@@ -296,7 +296,7 @@
             this.regTxtBox_login.FocusedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(41)))), ((int)(((byte)(86)))));
             this.regTxtBox_login.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.regTxtBox_login.FocusedForeColor = System.Drawing.Color.White;
-            this.regTxtBox_login.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.regTxtBox_login.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.regTxtBox_login.ForeColor = System.Drawing.Color.White;
             this.regTxtBox_login.Location = new System.Drawing.Point(491, 117);
             this.regTxtBox_login.MaxLength = 10;
@@ -329,7 +329,7 @@
             this.regTxtBox_confirmPasswd.FocusedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(41)))), ((int)(((byte)(86)))));
             this.regTxtBox_confirmPasswd.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.regTxtBox_confirmPasswd.FocusedForeColor = System.Drawing.Color.White;
-            this.regTxtBox_confirmPasswd.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.regTxtBox_confirmPasswd.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.regTxtBox_confirmPasswd.ForeColor = System.Drawing.Color.White;
             this.regTxtBox_confirmPasswd.Location = new System.Drawing.Point(491, 368);
             this.regTxtBox_confirmPasswd.MaxLength = 12;
@@ -392,7 +392,7 @@
             this.regTxtBox_passwd.FocusedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(41)))), ((int)(((byte)(86)))));
             this.regTxtBox_passwd.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.regTxtBox_passwd.FocusedForeColor = System.Drawing.Color.White;
-            this.regTxtBox_passwd.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.regTxtBox_passwd.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.regTxtBox_passwd.ForeColor = System.Drawing.Color.White;
             this.regTxtBox_passwd.Location = new System.Drawing.Point(491, 282);
             this.regTxtBox_passwd.MaxLength = 12;
@@ -425,7 +425,7 @@
             this.regTxtBox_email.FocusedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(41)))), ((int)(((byte)(86)))));
             this.regTxtBox_email.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.regTxtBox_email.FocusedForeColor = System.Drawing.Color.White;
-            this.regTxtBox_email.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.regTxtBox_email.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.regTxtBox_email.ForeColor = System.Drawing.Color.White;
             this.regTxtBox_email.Location = new System.Drawing.Point(491, 198);
             this.regTxtBox_email.MaxLength = 30;

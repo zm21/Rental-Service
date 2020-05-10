@@ -97,7 +97,7 @@ namespace RentalService
                     writer.WriteLine(regTxtBox_email.Text);
                 User user = new User(regTxtBox_login.Text, regTxtBox_email.Text, regTxtBox_confirmPasswd.Text);
                 user.Serialize();
-                RentalSerivce rentalSerivce = new RentalSerivce();
+                RentalSerivce rentalSerivce = new RentalSerivce(user);
                 this.Hide();
                 if (rentalSerivce.ShowDialog() == DialogResult.Retry)
                     this.Show();
@@ -119,7 +119,7 @@ namespace RentalService
                 user.Deserialize("users/" + logTxtBox_login.Text);
                 if(user.Passwd==logTxtBox_passwd.Text)
                 {
-                    RentalSerivce rentalSerivce = new RentalSerivce();
+                    RentalSerivce rentalSerivce = new RentalSerivce(user);
                     this.Hide();
                     if (rentalSerivce.ShowDialog() == DialogResult.Retry)
                         this.Show();

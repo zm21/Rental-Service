@@ -11,7 +11,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 namespace RentalService.Users
 {
     [Serializable]
-    class User : IUser
+    public class User : IUser
     {
         public int ID { get; set; }
         public string Login { get; private set; }

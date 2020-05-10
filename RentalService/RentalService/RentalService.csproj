@@ -129,6 +129,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="rentalservice.ico" />
+    <None Include="Resources\logofordesktop.png" />
+    <None Include="Resources\logofordesktop.jpg" />
+    <None Include="Resources\people.png" />
+    <None Include="Resources\email.png" />
+    <None Include="Resources\UserPasswd.png" />
+    <None Include="Resources\accountSettings.png" />
+    <None Include="Resources\creditcard.png" />
     <None Include="Resources\carkey.png" />
     <None Include="Resources\listsearch.png" />
     <None Include="Resources\logout.png" />
