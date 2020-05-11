@@ -88,7 +88,8 @@ namespace RentalService
 
         private void sbtR_addCar_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new AddCarForm(pnDesktop));
+            HideSubMenu();
         }
     }
 }

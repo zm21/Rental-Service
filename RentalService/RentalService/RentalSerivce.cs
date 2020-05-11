@@ -30,7 +30,7 @@ namespace RentalService
             lb_strdate.Text = cur_date.ToLongDateString();
             path_to_cars = "cars.bin";
             cars = new List<RentalCar>();
-            LoadCarsFromFile();
+            //LoadCarsFromFile();
         }
         private void HideSubMenu()
         {

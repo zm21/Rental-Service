@@ -224,6 +224,7 @@
             this.bt_rent.TabIndex = 12;
             this.bt_rent.Text = "Rent";
             this.bt_rent.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.bt_rent.Click += new System.EventHandler(this.bt_rent_Click);
             // 
             // DataGrid_cars
             // 
@@ -246,7 +247,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DataGrid_cars.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.DataGrid_cars.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGrid_cars.ColumnHeadersHeight = 32;
             this.DataGrid_cars.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Available,
             this.AvailableFrom,
@@ -284,7 +285,7 @@
             this.DataGrid_cars.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.DataGrid_cars.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DataGrid_cars.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.DataGrid_cars.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGrid_cars.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.DataGrid_cars.ThemeStyle.HeaderStyle.Height = 32;
             this.DataGrid_cars.ThemeStyle.ReadOnly = true;
             this.DataGrid_cars.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;

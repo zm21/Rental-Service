@@ -24,11 +24,14 @@ namespace RentalService
             }
             if (user is Admin)
                 bt_rent.Text = "Remove";
-            else
-                MessageBox.Show("user");
         }
 
         private void bt_find_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bt_rent_Click(object sender, EventArgs e)
         {
 
         }

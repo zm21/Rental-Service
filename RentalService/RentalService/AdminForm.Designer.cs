@@ -32,8 +32,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminForm));
             this.pnMenu = new Guna.UI.WinForms.GunaPanel();
             this.pnSubAccountSettings = new Guna.UI.WinForms.GunaPanel();
+            this.sbtAS_changeEmail = new Guna.UI.WinForms.GunaButton();
+            this.sbtAS_changePasswd = new Guna.UI.WinForms.GunaButton();
+            this.bt_accSettings = new Guna.UI.WinForms.GunaButton();
+            this.bt_removeUser = new Guna.UI.WinForms.GunaButton();
             this.pnSubRentMenu = new Guna.UI.WinForms.GunaPanel();
+            this.sbtR_addCar = new Guna.UI.WinForms.GunaButton();
+            this.sbtR_Cars = new Guna.UI.WinForms.GunaButton();
+            this.bt_logout = new Guna.UI.WinForms.GunaButton();
+            this.bt_Rent = new Guna.UI.WinForms.GunaButton();
+            this.bt_Home = new Guna.UI.WinForms.GunaButton();
             this.pnLogo = new Guna.UI.WinForms.GunaPanel();
+            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.gunaControlBox2 = new Guna.UI.WinForms.GunaControlBox();
             this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
@@ -43,34 +53,24 @@
             this.pnLogin = new Guna.UI.WinForms.GunaPanel();
             this.lb_login = new System.Windows.Forms.Label();
             this.pnAvaUser = new Guna.UI.WinForms.GunaPanel();
+            this.gunaPictureBox2 = new Guna.UI.WinForms.GunaPictureBox();
             this.pnDesktop = new Guna.UI.WinForms.GunaPanel();
             this.lb_strdate = new System.Windows.Forms.Label();
             this.lb_time = new System.Windows.Forms.Label();
-            this.pnChildForm = new Guna.UI.WinForms.GunaPanel();
-            this.gunaPictureBox2 = new Guna.UI.WinForms.GunaPictureBox();
-            this.sbtAS_changeEmail = new Guna.UI.WinForms.GunaButton();
-            this.sbtAS_changePasswd = new Guna.UI.WinForms.GunaButton();
-            this.bt_accSettings = new Guna.UI.WinForms.GunaButton();
-            this.bt_removeUser = new Guna.UI.WinForms.GunaButton();
-            this.sbtR_addCar = new Guna.UI.WinForms.GunaButton();
-            this.sbtR_Cars = new Guna.UI.WinForms.GunaButton();
-            this.bt_logout = new Guna.UI.WinForms.GunaButton();
-            this.bt_Rent = new Guna.UI.WinForms.GunaButton();
-            this.bt_Home = new Guna.UI.WinForms.GunaButton();
-            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaPictureBox3 = new Guna.UI.WinForms.GunaPictureBox();
+            this.pnChildForm = new Guna.UI.WinForms.GunaPanel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pnMenu.SuspendLayout();
             this.pnSubAccountSettings.SuspendLayout();
             this.pnSubRentMenu.SuspendLayout();
             this.pnLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             this.gunaPanel1.SuspendLayout();
             this.pnUserInfo.SuspendLayout();
             this.pnLogin.SuspendLayout();
             this.pnAvaUser.SuspendLayout();
-            this.pnDesktop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
+            this.pnDesktop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -102,186 +102,6 @@
             this.pnSubAccountSettings.Size = new System.Drawing.Size(220, 96);
             this.pnSubAccountSettings.TabIndex = 7;
             this.pnSubAccountSettings.Visible = false;
-            // 
-            // pnSubRentMenu
-            // 
-            this.pnSubRentMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(60)))));
-            this.pnSubRentMenu.Controls.Add(this.sbtR_addCar);
-            this.pnSubRentMenu.Controls.Add(this.sbtR_Cars);
-            this.pnSubRentMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnSubRentMenu.Location = new System.Drawing.Point(0, 195);
-            this.pnSubRentMenu.Name = "pnSubRentMenu";
-            this.pnSubRentMenu.Size = new System.Drawing.Size(220, 96);
-            this.pnSubRentMenu.TabIndex = 4;
-            this.pnSubRentMenu.Visible = false;
-            // 
-            // pnLogo
-            // 
-            this.pnLogo.Controls.Add(this.gunaPictureBox1);
-            this.pnLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnLogo.Location = new System.Drawing.Point(0, 0);
-            this.pnLogo.Name = "pnLogo";
-            this.pnLogo.Size = new System.Drawing.Size(220, 99);
-            this.pnLogo.TabIndex = 0;
-            // 
-            // gunaPanel1
-            // 
-            this.gunaPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(60)))));
-            this.gunaPanel1.Controls.Add(this.gunaControlBox2);
-            this.gunaPanel1.Controls.Add(this.gunaControlBox1);
-            this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gunaPanel1.Location = new System.Drawing.Point(220, 0);
-            this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(904, 29);
-            this.gunaPanel1.TabIndex = 2;
-            // 
-            // gunaControlBox2
-            // 
-            this.gunaControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.gunaControlBox2.AnimationHoverSpeed = 0.07F;
-            this.gunaControlBox2.AnimationSpeed = 0.03F;
-            this.gunaControlBox2.ControlBoxType = Guna.UI.WinForms.FormControlBoxType.MinimizeBox;
-            this.gunaControlBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(178)))), ((int)(((byte)(249)))));
-            this.gunaControlBox2.IconSize = 15F;
-            this.gunaControlBox2.Location = new System.Drawing.Point(818, 0);
-            this.gunaControlBox2.Name = "gunaControlBox2";
-            this.gunaControlBox2.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(58)))), ((int)(((byte)(183)))));
-            this.gunaControlBox2.OnHoverIconColor = System.Drawing.Color.White;
-            this.gunaControlBox2.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaControlBox2.Size = new System.Drawing.Size(45, 29);
-            this.gunaControlBox2.TabIndex = 1;
-            // 
-            // gunaControlBox1
-            // 
-            this.gunaControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.gunaControlBox1.AnimationHoverSpeed = 0.07F;
-            this.gunaControlBox1.AnimationSpeed = 0.03F;
-            this.gunaControlBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(178)))), ((int)(((byte)(249)))));
-            this.gunaControlBox1.IconSize = 15F;
-            this.gunaControlBox1.Location = new System.Drawing.Point(859, 0);
-            this.gunaControlBox1.Name = "gunaControlBox1";
-            this.gunaControlBox1.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(58)))), ((int)(((byte)(183)))));
-            this.gunaControlBox1.OnHoverIconColor = System.Drawing.Color.White;
-            this.gunaControlBox1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaControlBox1.Size = new System.Drawing.Size(45, 29);
-            this.gunaControlBox1.TabIndex = 0;
-            // 
-            // pnUserInfo
-            // 
-            this.pnUserInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(60)))));
-            this.pnUserInfo.Controls.Add(this.lb_yourBalance);
-            this.pnUserInfo.Controls.Add(this.lb_Balance);
-            this.pnUserInfo.Controls.Add(this.pnLogin);
-            this.pnUserInfo.Controls.Add(this.pnAvaUser);
-            this.pnUserInfo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnUserInfo.Location = new System.Drawing.Point(220, 29);
-            this.pnUserInfo.Name = "pnUserInfo";
-            this.pnUserInfo.Size = new System.Drawing.Size(904, 70);
-            this.pnUserInfo.TabIndex = 3;
-            // 
-            // lb_yourBalance
-            // 
-            this.lb_yourBalance.AutoSize = true;
-            this.lb_yourBalance.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lb_yourBalance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lb_yourBalance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(178)))), ((int)(((byte)(249)))));
-            this.lb_yourBalance.Location = new System.Drawing.Point(743, 40);
-            this.lb_yourBalance.Name = "lb_yourBalance";
-            this.lb_yourBalance.Size = new System.Drawing.Size(83, 15);
-            this.lb_yourBalance.TabIndex = 6;
-            this.lb_yourBalance.Text = "Your balance: ";
-            // 
-            // lb_Balance
-            // 
-            this.lb_Balance.AutoSize = true;
-            this.lb_Balance.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lb_Balance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lb_Balance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(178)))), ((int)(((byte)(249)))));
-            this.lb_Balance.Location = new System.Drawing.Point(826, 40);
-            this.lb_Balance.Name = "lb_Balance";
-            this.lb_Balance.Size = new System.Drawing.Size(14, 15);
-            this.lb_Balance.TabIndex = 5;
-            this.lb_Balance.Text = "0";
-            // 
-            // pnLogin
-            // 
-            this.pnLogin.Controls.Add(this.lb_login);
-            this.pnLogin.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnLogin.Location = new System.Drawing.Point(0, 0);
-            this.pnLogin.Name = "pnLogin";
-            this.pnLogin.Size = new System.Drawing.Size(840, 40);
-            this.pnLogin.TabIndex = 4;
-            // 
-            // lb_login
-            // 
-            this.lb_login.AutoSize = true;
-            this.lb_login.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lb_login.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lb_login.ForeColor = System.Drawing.Color.White;
-            this.lb_login.Location = new System.Drawing.Point(769, 0);
-            this.lb_login.Name = "lb_login";
-            this.lb_login.Size = new System.Drawing.Size(71, 28);
-            this.lb_login.TabIndex = 2;
-            this.lb_login.Text = "alogin";
-            // 
-            // pnAvaUser
-            // 
-            this.pnAvaUser.Controls.Add(this.gunaPictureBox2);
-            this.pnAvaUser.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnAvaUser.Location = new System.Drawing.Point(840, 0);
-            this.pnAvaUser.Name = "pnAvaUser";
-            this.pnAvaUser.Size = new System.Drawing.Size(64, 70);
-            this.pnAvaUser.TabIndex = 3;
-            // 
-            // pnDesktop
-            // 
-            this.pnDesktop.Controls.Add(this.lb_strdate);
-            this.pnDesktop.Controls.Add(this.lb_time);
-            this.pnDesktop.Controls.Add(this.gunaPictureBox3);
-            this.pnDesktop.Location = new System.Drawing.Point(220, 99);
-            this.pnDesktop.Name = "pnDesktop";
-            this.pnDesktop.Size = new System.Drawing.Size(904, 531);
-            this.pnDesktop.TabIndex = 4;
-            // 
-            // lb_strdate
-            // 
-            this.lb_strdate.AutoSize = true;
-            this.lb_strdate.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-            this.lb_strdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(178)))), ((int)(((byte)(249)))));
-            this.lb_strdate.Location = new System.Drawing.Point(310, 357);
-            this.lb_strdate.Name = "lb_strdate";
-            this.lb_strdate.Size = new System.Drawing.Size(278, 30);
-            this.lb_strdate.TabIndex = 3;
-            this.lb_strdate.Text = "date date date date date ";
-            // 
-            // lb_time
-            // 
-            this.lb_time.AutoSize = true;
-            this.lb_time.Font = new System.Drawing.Font("Segoe UI", 32F, System.Drawing.FontStyle.Bold);
-            this.lb_time.ForeColor = System.Drawing.Color.White;
-            this.lb_time.Location = new System.Drawing.Point(358, 298);
-            this.lb_time.Name = "lb_time";
-            this.lb_time.Size = new System.Drawing.Size(199, 59);
-            this.lb_time.TabIndex = 2;
-            this.lb_time.Text = "00:00:00";
-            // 
-            // pnChildForm
-            // 
-            this.pnChildForm.Location = new System.Drawing.Point(220, 99);
-            this.pnChildForm.Name = "pnChildForm";
-            this.pnChildForm.Size = new System.Drawing.Size(904, 531);
-            this.pnChildForm.TabIndex = 5;
-            // 
-            // gunaPictureBox2
-            // 
-            this.gunaPictureBox2.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox2.Image = global::RentalService.Properties.Resources.adminicon;
-            this.gunaPictureBox2.Location = new System.Drawing.Point(3, 6);
-            this.gunaPictureBox2.Name = "gunaPictureBox2";
-            this.gunaPictureBox2.Size = new System.Drawing.Size(55, 55);
-            this.gunaPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaPictureBox2.TabIndex = 0;
-            this.gunaPictureBox2.TabStop = false;
             // 
             // sbtAS_changeEmail
             // 
@@ -380,6 +200,18 @@
             this.bt_removeUser.Size = new System.Drawing.Size(220, 48);
             this.bt_removeUser.TabIndex = 5;
             this.bt_removeUser.Text = "Remove user";
+            // 
+            // pnSubRentMenu
+            // 
+            this.pnSubRentMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(60)))));
+            this.pnSubRentMenu.Controls.Add(this.sbtR_addCar);
+            this.pnSubRentMenu.Controls.Add(this.sbtR_Cars);
+            this.pnSubRentMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnSubRentMenu.Location = new System.Drawing.Point(0, 195);
+            this.pnSubRentMenu.Name = "pnSubRentMenu";
+            this.pnSubRentMenu.Size = new System.Drawing.Size(220, 96);
+            this.pnSubRentMenu.TabIndex = 4;
+            this.pnSubRentMenu.Visible = false;
             // 
             // sbtR_addCar
             // 
@@ -507,6 +339,15 @@
             this.bt_Home.Text = "Home";
             this.bt_Home.Click += new System.EventHandler(this.bt_Home_Click);
             // 
+            // pnLogo
+            // 
+            this.pnLogo.Controls.Add(this.gunaPictureBox1);
+            this.pnLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnLogo.Location = new System.Drawing.Point(0, 0);
+            this.pnLogo.Name = "pnLogo";
+            this.pnLogo.Size = new System.Drawing.Size(220, 99);
+            this.pnLogo.TabIndex = 0;
+            // 
             // gunaPictureBox1
             // 
             this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
@@ -518,6 +359,158 @@
             this.gunaPictureBox1.TabIndex = 0;
             this.gunaPictureBox1.TabStop = false;
             // 
+            // gunaPanel1
+            // 
+            this.gunaPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(60)))));
+            this.gunaPanel1.Controls.Add(this.gunaControlBox2);
+            this.gunaPanel1.Controls.Add(this.gunaControlBox1);
+            this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gunaPanel1.Location = new System.Drawing.Point(220, 0);
+            this.gunaPanel1.Name = "gunaPanel1";
+            this.gunaPanel1.Size = new System.Drawing.Size(904, 29);
+            this.gunaPanel1.TabIndex = 2;
+            // 
+            // gunaControlBox2
+            // 
+            this.gunaControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaControlBox2.AnimationHoverSpeed = 0.07F;
+            this.gunaControlBox2.AnimationSpeed = 0.03F;
+            this.gunaControlBox2.ControlBoxType = Guna.UI.WinForms.FormControlBoxType.MinimizeBox;
+            this.gunaControlBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(178)))), ((int)(((byte)(249)))));
+            this.gunaControlBox2.IconSize = 15F;
+            this.gunaControlBox2.Location = new System.Drawing.Point(818, 0);
+            this.gunaControlBox2.Name = "gunaControlBox2";
+            this.gunaControlBox2.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(58)))), ((int)(((byte)(183)))));
+            this.gunaControlBox2.OnHoverIconColor = System.Drawing.Color.White;
+            this.gunaControlBox2.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaControlBox2.Size = new System.Drawing.Size(45, 29);
+            this.gunaControlBox2.TabIndex = 1;
+            // 
+            // gunaControlBox1
+            // 
+            this.gunaControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaControlBox1.AnimationHoverSpeed = 0.07F;
+            this.gunaControlBox1.AnimationSpeed = 0.03F;
+            this.gunaControlBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(178)))), ((int)(((byte)(249)))));
+            this.gunaControlBox1.IconSize = 15F;
+            this.gunaControlBox1.Location = new System.Drawing.Point(859, 0);
+            this.gunaControlBox1.Name = "gunaControlBox1";
+            this.gunaControlBox1.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(58)))), ((int)(((byte)(183)))));
+            this.gunaControlBox1.OnHoverIconColor = System.Drawing.Color.White;
+            this.gunaControlBox1.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaControlBox1.Size = new System.Drawing.Size(45, 29);
+            this.gunaControlBox1.TabIndex = 0;
+            // 
+            // pnUserInfo
+            // 
+            this.pnUserInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(60)))));
+            this.pnUserInfo.Controls.Add(this.lb_yourBalance);
+            this.pnUserInfo.Controls.Add(this.lb_Balance);
+            this.pnUserInfo.Controls.Add(this.pnLogin);
+            this.pnUserInfo.Controls.Add(this.pnAvaUser);
+            this.pnUserInfo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnUserInfo.Location = new System.Drawing.Point(220, 29);
+            this.pnUserInfo.Name = "pnUserInfo";
+            this.pnUserInfo.Size = new System.Drawing.Size(904, 70);
+            this.pnUserInfo.TabIndex = 3;
+            // 
+            // lb_yourBalance
+            // 
+            this.lb_yourBalance.AutoSize = true;
+            this.lb_yourBalance.Dock = System.Windows.Forms.DockStyle.Right;
+            this.lb_yourBalance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lb_yourBalance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(178)))), ((int)(((byte)(249)))));
+            this.lb_yourBalance.Location = new System.Drawing.Point(743, 40);
+            this.lb_yourBalance.Name = "lb_yourBalance";
+            this.lb_yourBalance.Size = new System.Drawing.Size(83, 15);
+            this.lb_yourBalance.TabIndex = 6;
+            this.lb_yourBalance.Text = "Your balance: ";
+            // 
+            // lb_Balance
+            // 
+            this.lb_Balance.AutoSize = true;
+            this.lb_Balance.Dock = System.Windows.Forms.DockStyle.Right;
+            this.lb_Balance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lb_Balance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(178)))), ((int)(((byte)(249)))));
+            this.lb_Balance.Location = new System.Drawing.Point(826, 40);
+            this.lb_Balance.Name = "lb_Balance";
+            this.lb_Balance.Size = new System.Drawing.Size(14, 15);
+            this.lb_Balance.TabIndex = 5;
+            this.lb_Balance.Text = "0";
+            // 
+            // pnLogin
+            // 
+            this.pnLogin.Controls.Add(this.lb_login);
+            this.pnLogin.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnLogin.Location = new System.Drawing.Point(0, 0);
+            this.pnLogin.Name = "pnLogin";
+            this.pnLogin.Size = new System.Drawing.Size(840, 40);
+            this.pnLogin.TabIndex = 4;
+            // 
+            // lb_login
+            // 
+            this.lb_login.AutoSize = true;
+            this.lb_login.Dock = System.Windows.Forms.DockStyle.Right;
+            this.lb_login.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lb_login.ForeColor = System.Drawing.Color.White;
+            this.lb_login.Location = new System.Drawing.Point(769, 0);
+            this.lb_login.Name = "lb_login";
+            this.lb_login.Size = new System.Drawing.Size(71, 28);
+            this.lb_login.TabIndex = 2;
+            this.lb_login.Text = "alogin";
+            // 
+            // pnAvaUser
+            // 
+            this.pnAvaUser.Controls.Add(this.gunaPictureBox2);
+            this.pnAvaUser.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnAvaUser.Location = new System.Drawing.Point(840, 0);
+            this.pnAvaUser.Name = "pnAvaUser";
+            this.pnAvaUser.Size = new System.Drawing.Size(64, 70);
+            this.pnAvaUser.TabIndex = 3;
+            // 
+            // gunaPictureBox2
+            // 
+            this.gunaPictureBox2.BaseColor = System.Drawing.Color.White;
+            this.gunaPictureBox2.Image = global::RentalService.Properties.Resources.adminicon;
+            this.gunaPictureBox2.Location = new System.Drawing.Point(3, 6);
+            this.gunaPictureBox2.Name = "gunaPictureBox2";
+            this.gunaPictureBox2.Size = new System.Drawing.Size(55, 55);
+            this.gunaPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.gunaPictureBox2.TabIndex = 0;
+            this.gunaPictureBox2.TabStop = false;
+            // 
+            // pnDesktop
+            // 
+            this.pnDesktop.Controls.Add(this.lb_strdate);
+            this.pnDesktop.Controls.Add(this.lb_time);
+            this.pnDesktop.Controls.Add(this.gunaPictureBox3);
+            this.pnDesktop.Location = new System.Drawing.Point(220, 99);
+            this.pnDesktop.Name = "pnDesktop";
+            this.pnDesktop.Size = new System.Drawing.Size(904, 531);
+            this.pnDesktop.TabIndex = 4;
+            // 
+            // lb_strdate
+            // 
+            this.lb_strdate.AutoSize = true;
+            this.lb_strdate.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
+            this.lb_strdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(178)))), ((int)(((byte)(249)))));
+            this.lb_strdate.Location = new System.Drawing.Point(310, 357);
+            this.lb_strdate.Name = "lb_strdate";
+            this.lb_strdate.Size = new System.Drawing.Size(278, 30);
+            this.lb_strdate.TabIndex = 3;
+            this.lb_strdate.Text = "date date date date date ";
+            // 
+            // lb_time
+            // 
+            this.lb_time.AutoSize = true;
+            this.lb_time.Font = new System.Drawing.Font("Segoe UI", 32F, System.Drawing.FontStyle.Bold);
+            this.lb_time.ForeColor = System.Drawing.Color.White;
+            this.lb_time.Location = new System.Drawing.Point(358, 298);
+            this.lb_time.Name = "lb_time";
+            this.lb_time.Size = new System.Drawing.Size(199, 59);
+            this.lb_time.TabIndex = 2;
+            this.lb_time.Text = "00:00:00";
+            // 
             // gunaPictureBox3
             // 
             this.gunaPictureBox3.BaseColor = System.Drawing.Color.White;
@@ -528,6 +521,13 @@
             this.gunaPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.gunaPictureBox3.TabIndex = 0;
             this.gunaPictureBox3.TabStop = false;
+            // 
+            // pnChildForm
+            // 
+            this.pnChildForm.Location = new System.Drawing.Point(220, 99);
+            this.pnChildForm.Name = "pnChildForm";
+            this.pnChildForm.Size = new System.Drawing.Size(904, 531);
+            this.pnChildForm.TabIndex = 5;
             // 
             // timer1
             // 
@@ -554,16 +554,16 @@
             this.pnSubAccountSettings.ResumeLayout(false);
             this.pnSubRentMenu.ResumeLayout(false);
             this.pnLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
             this.gunaPanel1.ResumeLayout(false);
             this.pnUserInfo.ResumeLayout(false);
             this.pnUserInfo.PerformLayout();
             this.pnLogin.ResumeLayout(false);
             this.pnLogin.PerformLayout();
             this.pnAvaUser.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).EndInit();
             this.pnDesktop.ResumeLayout(false);
             this.pnDesktop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox3)).EndInit();
             this.ResumeLayout(false);
 
