@@ -1,4 +1,5 @@
 ﻿using RentalService.Users;
+using RentCar.Transport;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,8 @@ namespace RentalService
     {
         private Form ActiveForm;
         private User user;
+        private List<RentalCar> cars;
+        private string path_to_cars;
         public RentalSerivce(User user)
         {
             InitializeComponent();
@@ -25,6 +28,9 @@ namespace RentalService
             DateTime cur_date = DateTime.Now;
             lb_time.Text = cur_date.ToLongTimeString();
             lb_strdate.Text = cur_date.ToLongDateString();
+            path_to_cars = "cars.bin";
+            cars = new List<RentalCar>();
+            //LoadCarsFromFile();
         }
         private void HideSubMenu()
         {
@@ -60,6 +66,7 @@ namespace RentalService
 
         private void sbtR_Cars_Click(object sender, EventArgs e)
         {
+            OpenChildForm(new RentCarsForm(cars));
             HideSubMenu();
         }
 
@@ -68,13 +75,15 @@ namespace RentalService
             HideSubMenu();
         }
 
-        private void gunaButton6_Click(object sender, EventArgs e)
+        private void sbtAC_changePasswd_Click(object sender, EventArgs e)
         {
+            OpenChildForm(new ChangePasswordForm(user, pnDesktop));
             HideSubMenu();
         }
 
         private void gunaButton5_Click(object sender, EventArgs e)
         {
+            OpenChildForm(new ChangeEmailForm(user, pnDesktop));
             HideSubMenu();
         }
 
@@ -94,8 +103,14 @@ namespace RentalService
             childForm.Dock = DockStyle.Fill;
             pnChildForm.Controls.Add(childForm);
             pnChildForm.Tag = childForm;
+            pnChildForm.BringToFront();
             childForm.BringToFront();
             childForm.Show();
+        }
+
+        private void bt_Home_Click(object sender, EventArgs e)
+        {
+            pnDesktop.BringToFront();
         }
     }
 }
