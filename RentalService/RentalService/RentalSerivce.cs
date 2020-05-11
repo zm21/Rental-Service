@@ -66,7 +66,7 @@ namespace RentalService
 
         private void sbtR_Cars_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new RentCarsForm(cars));
+            OpenChildForm(new RentCarsForm(cars, user));
             HideSubMenu();
         }
 

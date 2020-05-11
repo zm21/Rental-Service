@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using RentalService.Users;
@@ -9,10 +10,15 @@ namespace RentalService
 {
     public partial class Form1 : Form
     {
+        string users_path;
+        string admins_path;
         public Form1()
         {
             InitializeComponent();
             Guna.UI.Lib.GraphicsHelper.ShadowForm(this);
+            users_path = @"users/";
+            admins_path = @"admins/";
+            
         }
         private void bt_goto_SignUp_Click(object sender, EventArgs e)
         {
@@ -50,7 +56,7 @@ namespace RentalService
                 MsgBox msgBox = new MsgBox("Bad login", "Login length should be between 3 and 10 characters. No special characters.");
                 msgBox.ShowDialog();
             }
-            if (log_valide && File.Exists("users/" + regTxtBox_login.Text))
+            if (log_valide && File.Exists(users_path + regTxtBox_login.Text))
             {
                 log_valide = false;
                 MsgBox msgBox = new MsgBox("Bad login", "Such a user already exists!");
@@ -108,6 +114,33 @@ namespace RentalService
 
         private void bt_login_Click(object sender, EventArgs e)
         {
+            bool is_admin_try = false;
+            if(chb_alogin.Checked)
+            {
+                is_admin_try = true;
+                if (File.Exists(admins_path + logTxtBox_login.Text))
+                {
+                    Admin admin = new Admin();
+                    admin.Deserialize(admins_path + logTxtBox_login.Text);
+                    if (admin.Passwd == logTxtBox_passwd.Text)
+                    {
+                        chb_alogin.Checked = false;
+                        AdminForm rentalSerivce = new AdminForm(admin);
+                        this.Hide();
+                        if (rentalSerivce.ShowDialog() == DialogResult.Retry)
+                            this.Show();
+                        else
+                            this.Close();
+                    }
+                }
+                else
+                {
+                    chb_alogin.Checked = false;
+                    MsgBox msgBox = new MsgBox("Authorization error", "No user with this login was found!");
+                    msgBox.ShowDialog();
+                }
+            }
+            if(!is_admin_try)
             if (!File.Exists("users/" + logTxtBox_login.Text))
             {
                 MsgBox msgBox = new MsgBox("Authorization error", "No user with this login was found!");

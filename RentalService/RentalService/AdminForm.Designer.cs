@@ -1,6 +1,6 @@
 ﻿namespace RentalService
 {
-    partial class RentalSerivce
+    partial class AdminForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RentalSerivce));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminForm));
             this.pnMenu = new Guna.UI.WinForms.GunaPanel();
             this.pnSubAccountSettings = new Guna.UI.WinForms.GunaPanel();
             this.pnSubRentMenu = new Guna.UI.WinForms.GunaPanel();
@@ -46,20 +46,20 @@
             this.pnDesktop = new Guna.UI.WinForms.GunaPanel();
             this.lb_strdate = new System.Windows.Forms.Label();
             this.lb_time = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pnChildForm = new Guna.UI.WinForms.GunaPanel();
             this.gunaPictureBox2 = new Guna.UI.WinForms.GunaPictureBox();
             this.sbtAS_changeEmail = new Guna.UI.WinForms.GunaButton();
             this.sbtAS_changePasswd = new Guna.UI.WinForms.GunaButton();
             this.bt_accSettings = new Guna.UI.WinForms.GunaButton();
-            this.bt_replishBalance = new Guna.UI.WinForms.GunaButton();
-            this.sbtR_myRcars = new Guna.UI.WinForms.GunaButton();
+            this.bt_removeUser = new Guna.UI.WinForms.GunaButton();
+            this.sbtR_addCar = new Guna.UI.WinForms.GunaButton();
             this.sbtR_Cars = new Guna.UI.WinForms.GunaButton();
             this.bt_logout = new Guna.UI.WinForms.GunaButton();
             this.bt_Rent = new Guna.UI.WinForms.GunaButton();
             this.bt_Home = new Guna.UI.WinForms.GunaButton();
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaPictureBox3 = new Guna.UI.WinForms.GunaPictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pnMenu.SuspendLayout();
             this.pnSubAccountSettings.SuspendLayout();
             this.pnSubRentMenu.SuspendLayout();
@@ -79,7 +79,7 @@
             this.pnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.pnMenu.Controls.Add(this.pnSubAccountSettings);
             this.pnMenu.Controls.Add(this.bt_accSettings);
-            this.pnMenu.Controls.Add(this.bt_replishBalance);
+            this.pnMenu.Controls.Add(this.bt_removeUser);
             this.pnMenu.Controls.Add(this.pnSubRentMenu);
             this.pnMenu.Controls.Add(this.bt_logout);
             this.pnMenu.Controls.Add(this.bt_Rent);
@@ -89,7 +89,7 @@
             this.pnMenu.Location = new System.Drawing.Point(0, 0);
             this.pnMenu.Name = "pnMenu";
             this.pnMenu.Size = new System.Drawing.Size(220, 630);
-            this.pnMenu.TabIndex = 0;
+            this.pnMenu.TabIndex = 1;
             // 
             // pnSubAccountSettings
             // 
@@ -106,7 +106,7 @@
             // pnSubRentMenu
             // 
             this.pnSubRentMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(60)))));
-            this.pnSubRentMenu.Controls.Add(this.sbtR_myRcars);
+            this.pnSubRentMenu.Controls.Add(this.sbtR_addCar);
             this.pnSubRentMenu.Controls.Add(this.sbtR_Cars);
             this.pnSubRentMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnSubRentMenu.Location = new System.Drawing.Point(0, 195);
@@ -133,7 +133,7 @@
             this.gunaPanel1.Location = new System.Drawing.Point(220, 0);
             this.gunaPanel1.Name = "gunaPanel1";
             this.gunaPanel1.Size = new System.Drawing.Size(904, 29);
-            this.gunaPanel1.TabIndex = 1;
+            this.gunaPanel1.TabIndex = 2;
             // 
             // gunaControlBox2
             // 
@@ -177,7 +177,7 @@
             this.pnUserInfo.Location = new System.Drawing.Point(220, 29);
             this.pnUserInfo.Name = "pnUserInfo";
             this.pnUserInfo.Size = new System.Drawing.Size(904, 70);
-            this.pnUserInfo.TabIndex = 2;
+            this.pnUserInfo.TabIndex = 3;
             // 
             // lb_yourBalance
             // 
@@ -218,11 +218,11 @@
             this.lb_login.Dock = System.Windows.Forms.DockStyle.Right;
             this.lb_login.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lb_login.ForeColor = System.Drawing.Color.White;
-            this.lb_login.Location = new System.Drawing.Point(788, 0);
+            this.lb_login.Location = new System.Drawing.Point(769, 0);
             this.lb_login.Name = "lb_login";
-            this.lb_login.Size = new System.Drawing.Size(52, 28);
+            this.lb_login.Size = new System.Drawing.Size(71, 28);
             this.lb_login.TabIndex = 2;
-            this.lb_login.Text = "user";
+            this.lb_login.Text = "alogin";
             // 
             // pnAvaUser
             // 
@@ -241,7 +241,7 @@
             this.pnDesktop.Location = new System.Drawing.Point(220, 99);
             this.pnDesktop.Name = "pnDesktop";
             this.pnDesktop.Size = new System.Drawing.Size(904, 531);
-            this.pnDesktop.TabIndex = 3;
+            this.pnDesktop.TabIndex = 4;
             // 
             // lb_strdate
             // 
@@ -265,23 +265,17 @@
             this.lb_time.TabIndex = 2;
             this.lb_time.Text = "00:00:00";
             // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // pnChildForm
             // 
             this.pnChildForm.Location = new System.Drawing.Point(220, 99);
             this.pnChildForm.Name = "pnChildForm";
             this.pnChildForm.Size = new System.Drawing.Size(904, 531);
-            this.pnChildForm.TabIndex = 4;
+            this.pnChildForm.TabIndex = 5;
             // 
             // gunaPictureBox2
             // 
             this.gunaPictureBox2.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox2.Image = global::RentalService.Properties.Resources.people;
+            this.gunaPictureBox2.Image = global::RentalService.Properties.Resources.adminicon;
             this.gunaPictureBox2.Location = new System.Drawing.Point(3, 6);
             this.gunaPictureBox2.Name = "gunaPictureBox2";
             this.gunaPictureBox2.Size = new System.Drawing.Size(55, 55);
@@ -313,7 +307,6 @@
             this.sbtAS_changeEmail.Size = new System.Drawing.Size(220, 48);
             this.sbtAS_changeEmail.TabIndex = 4;
             this.sbtAS_changeEmail.Text = "Change email";
-            this.sbtAS_changeEmail.Click += new System.EventHandler(this.gunaButton5_Click);
             // 
             // sbtAS_changePasswd
             // 
@@ -339,7 +332,6 @@
             this.sbtAS_changePasswd.Size = new System.Drawing.Size(220, 48);
             this.sbtAS_changePasswd.TabIndex = 3;
             this.sbtAS_changePasswd.Text = "Change password";
-            this.sbtAS_changePasswd.Click += new System.EventHandler(this.sbtAC_changePasswd_Click);
             // 
             // bt_accSettings
             // 
@@ -352,7 +344,7 @@
             this.bt_accSettings.FocusedColor = System.Drawing.Color.Empty;
             this.bt_accSettings.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.bt_accSettings.ForeColor = System.Drawing.Color.White;
-            this.bt_accSettings.Image = global::RentalService.Properties.Resources.accountSettings;
+            this.bt_accSettings.Image = global::RentalService.Properties.Resources.removeuser;
             this.bt_accSettings.ImageSize = new System.Drawing.Size(42, 42);
             this.bt_accSettings.Location = new System.Drawing.Point(0, 339);
             this.bt_accSettings.Name = "bt_accSettings";
@@ -364,57 +356,56 @@
             this.bt_accSettings.Size = new System.Drawing.Size(220, 48);
             this.bt_accSettings.TabIndex = 6;
             this.bt_accSettings.Text = "Account settings";
-            this.bt_accSettings.Click += new System.EventHandler(this.bt_accSettings_Click);
             // 
-            // bt_replishBalance
+            // bt_removeUser
             // 
-            this.bt_replishBalance.AnimationHoverSpeed = 0.07F;
-            this.bt_replishBalance.AnimationSpeed = 0.03F;
-            this.bt_replishBalance.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.bt_replishBalance.BorderColor = System.Drawing.Color.Black;
-            this.bt_replishBalance.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.bt_replishBalance.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bt_replishBalance.FocusedColor = System.Drawing.Color.Empty;
-            this.bt_replishBalance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.bt_replishBalance.ForeColor = System.Drawing.Color.White;
-            this.bt_replishBalance.Image = global::RentalService.Properties.Resources.creditcard;
-            this.bt_replishBalance.ImageSize = new System.Drawing.Size(42, 42);
-            this.bt_replishBalance.Location = new System.Drawing.Point(0, 291);
-            this.bt_replishBalance.Name = "bt_replishBalance";
-            this.bt_replishBalance.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(60)))));
-            this.bt_replishBalance.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.bt_replishBalance.OnHoverForeColor = System.Drawing.Color.White;
-            this.bt_replishBalance.OnHoverImage = null;
-            this.bt_replishBalance.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(4)))), ((int)(((byte)(52)))));
-            this.bt_replishBalance.Size = new System.Drawing.Size(220, 48);
-            this.bt_replishBalance.TabIndex = 5;
-            this.bt_replishBalance.Text = "Replish balance";
+            this.bt_removeUser.AnimationHoverSpeed = 0.07F;
+            this.bt_removeUser.AnimationSpeed = 0.03F;
+            this.bt_removeUser.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.bt_removeUser.BorderColor = System.Drawing.Color.Black;
+            this.bt_removeUser.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.bt_removeUser.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bt_removeUser.FocusedColor = System.Drawing.Color.Empty;
+            this.bt_removeUser.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.bt_removeUser.ForeColor = System.Drawing.Color.White;
+            this.bt_removeUser.Image = global::RentalService.Properties.Resources.removeuser;
+            this.bt_removeUser.ImageSize = new System.Drawing.Size(42, 42);
+            this.bt_removeUser.Location = new System.Drawing.Point(0, 291);
+            this.bt_removeUser.Name = "bt_removeUser";
+            this.bt_removeUser.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(60)))));
+            this.bt_removeUser.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.bt_removeUser.OnHoverForeColor = System.Drawing.Color.White;
+            this.bt_removeUser.OnHoverImage = null;
+            this.bt_removeUser.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(4)))), ((int)(((byte)(52)))));
+            this.bt_removeUser.Size = new System.Drawing.Size(220, 48);
+            this.bt_removeUser.TabIndex = 5;
+            this.bt_removeUser.Text = "Remove user";
             // 
-            // sbtR_myRcars
+            // sbtR_addCar
             // 
-            this.sbtR_myRcars.AnimationHoverSpeed = 0.07F;
-            this.sbtR_myRcars.AnimationSpeed = 0.03F;
-            this.sbtR_myRcars.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(60)))));
-            this.sbtR_myRcars.BorderColor = System.Drawing.Color.Black;
-            this.sbtR_myRcars.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.sbtR_myRcars.Dock = System.Windows.Forms.DockStyle.Top;
-            this.sbtR_myRcars.FocusedColor = System.Drawing.Color.Empty;
-            this.sbtR_myRcars.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.sbtR_myRcars.ForeColor = System.Drawing.Color.White;
-            this.sbtR_myRcars.Image = global::RentalService.Properties.Resources.carkey;
-            this.sbtR_myRcars.ImageOffsetX = 15;
-            this.sbtR_myRcars.ImageSize = new System.Drawing.Size(38, 38);
-            this.sbtR_myRcars.Location = new System.Drawing.Point(0, 48);
-            this.sbtR_myRcars.Name = "sbtR_myRcars";
-            this.sbtR_myRcars.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(39)))), ((int)(((byte)(113)))));
-            this.sbtR_myRcars.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.sbtR_myRcars.OnHoverForeColor = System.Drawing.Color.White;
-            this.sbtR_myRcars.OnHoverImage = null;
-            this.sbtR_myRcars.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(60)))));
-            this.sbtR_myRcars.Size = new System.Drawing.Size(220, 48);
-            this.sbtR_myRcars.TabIndex = 4;
-            this.sbtR_myRcars.Text = "My rented cars";
-            this.sbtR_myRcars.Click += new System.EventHandler(this.sbtR_myRcars_Click);
+            this.sbtR_addCar.AnimationHoverSpeed = 0.07F;
+            this.sbtR_addCar.AnimationSpeed = 0.03F;
+            this.sbtR_addCar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(60)))));
+            this.sbtR_addCar.BorderColor = System.Drawing.Color.Black;
+            this.sbtR_addCar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.sbtR_addCar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.sbtR_addCar.FocusedColor = System.Drawing.Color.Empty;
+            this.sbtR_addCar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.sbtR_addCar.ForeColor = System.Drawing.Color.White;
+            this.sbtR_addCar.Image = global::RentalService.Properties.Resources.addCar;
+            this.sbtR_addCar.ImageOffsetX = 15;
+            this.sbtR_addCar.ImageSize = new System.Drawing.Size(38, 38);
+            this.sbtR_addCar.Location = new System.Drawing.Point(0, 48);
+            this.sbtR_addCar.Name = "sbtR_addCar";
+            this.sbtR_addCar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(39)))), ((int)(((byte)(113)))));
+            this.sbtR_addCar.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.sbtR_addCar.OnHoverForeColor = System.Drawing.Color.White;
+            this.sbtR_addCar.OnHoverImage = null;
+            this.sbtR_addCar.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(60)))));
+            this.sbtR_addCar.Size = new System.Drawing.Size(220, 48);
+            this.sbtR_addCar.TabIndex = 4;
+            this.sbtR_addCar.Text = "Add car";
+            this.sbtR_addCar.Click += new System.EventHandler(this.sbtR_addCar_Click);
             // 
             // sbtR_Cars
             // 
@@ -538,7 +529,12 @@
             this.gunaPictureBox3.TabIndex = 0;
             this.gunaPictureBox3.TabStop = false;
             // 
-            // RentalSerivce
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -551,9 +547,9 @@
             this.Controls.Add(this.pnChildForm);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "RentalSerivce";
+            this.Name = "AdminForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "RentalSerivce";
+            this.Text = "AdminForm";
             this.pnMenu.ResumeLayout(false);
             this.pnSubAccountSettings.ResumeLayout(false);
             this.pnSubRentMenu.ResumeLayout(false);
@@ -576,34 +572,34 @@
         #endregion
 
         private Guna.UI.WinForms.GunaPanel pnMenu;
-        private Guna.UI.WinForms.GunaPanel pnLogo;
-        private Guna.UI.WinForms.GunaPanel gunaPanel1;
-        private Guna.UI.WinForms.GunaControlBox gunaControlBox2;
-        private Guna.UI.WinForms.GunaControlBox gunaControlBox1;
-        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
-        private Guna.UI.WinForms.GunaButton bt_Home;
-        private Guna.UI.WinForms.GunaButton bt_Rent;
-        private Guna.UI.WinForms.GunaButton bt_logout;
-        private Guna.UI.WinForms.GunaPanel pnSubRentMenu;
-        private Guna.UI.WinForms.GunaButton sbtR_Cars;
-        private Guna.UI.WinForms.GunaButton sbtR_myRcars;
-        private Guna.UI.WinForms.GunaButton bt_replishBalance;
-        private Guna.UI.WinForms.GunaButton bt_accSettings;
         private Guna.UI.WinForms.GunaPanel pnSubAccountSettings;
         private Guna.UI.WinForms.GunaButton sbtAS_changeEmail;
         private Guna.UI.WinForms.GunaButton sbtAS_changePasswd;
+        private Guna.UI.WinForms.GunaButton bt_accSettings;
+        private Guna.UI.WinForms.GunaButton bt_removeUser;
+        private Guna.UI.WinForms.GunaPanel pnSubRentMenu;
+        private Guna.UI.WinForms.GunaButton sbtR_addCar;
+        private Guna.UI.WinForms.GunaButton sbtR_Cars;
+        private Guna.UI.WinForms.GunaButton bt_logout;
+        private Guna.UI.WinForms.GunaButton bt_Rent;
+        private Guna.UI.WinForms.GunaButton bt_Home;
+        private Guna.UI.WinForms.GunaPanel pnLogo;
+        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
+        private Guna.UI.WinForms.GunaPanel gunaPanel1;
+        private Guna.UI.WinForms.GunaControlBox gunaControlBox2;
+        private Guna.UI.WinForms.GunaControlBox gunaControlBox1;
         private Guna.UI.WinForms.GunaPanel pnUserInfo;
-        private Guna.UI.WinForms.GunaPanel pnAvaUser;
-        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox2;
-        private Guna.UI.WinForms.GunaPanel pnLogin;
-        private System.Windows.Forms.Label lb_login;
         private System.Windows.Forms.Label lb_yourBalance;
         private System.Windows.Forms.Label lb_Balance;
+        private Guna.UI.WinForms.GunaPanel pnLogin;
+        private System.Windows.Forms.Label lb_login;
+        private Guna.UI.WinForms.GunaPanel pnAvaUser;
+        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox2;
         private Guna.UI.WinForms.GunaPanel pnDesktop;
-        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox3;
-        private System.Windows.Forms.Label lb_time;
         private System.Windows.Forms.Label lb_strdate;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lb_time;
+        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox3;
         private Guna.UI.WinForms.GunaPanel pnChildForm;
+        private System.Windows.Forms.Timer timer1;
     }
 }
