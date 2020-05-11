@@ -87,6 +87,12 @@
     <Compile Include="RentalServiceCars.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ReplishBalanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReplishBalanceForm.Designer.cs">
+      <DependentUpon>ReplishBalanceForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Transport\Car.cs" />
     <Compile Include="Transport\ITransport.cs" />
     <Compile Include="Transport\RentalCar.cs" />
@@ -147,6 +153,9 @@
     <EmbeddedResource Include="RentalSerivce.resx">
       <DependentUpon>RentalSerivce.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReplishBalanceForm.resx">
+      <DependentUpon>ReplishBalanceForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -162,6 +171,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="rentalservice.ico" />
+    <None Include="Resources\creditcardtopayment.png" />
     <None Include="Resources\logofordesktop.png" />
     <None Include="Resources\logofordesktop.jpg" />
     <None Include="Resources\people.png" />

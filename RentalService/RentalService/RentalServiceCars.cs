@@ -15,7 +15,7 @@ namespace RentalService
             BinaryFormatter binaryFormatter = new BinaryFormatter();
             using (Stream fStream = File.OpenRead(path_to_cars))
             {
-                cars = (List<RentalCar>)binaryFormatter.Deserialize(fStream);
+               cars = (List<RentalCar>)binaryFormatter.Deserialize(fStream);
             }
         }
         public void SaveCarsToFile()

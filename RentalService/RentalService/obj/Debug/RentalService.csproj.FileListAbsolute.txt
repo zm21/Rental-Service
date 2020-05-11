@@ -16,3 +16,4 @@ D:\Mikola\ШАГ\2-й семестр\Windows Forms\kyrsova\RentalService\RentalS
 D:\Mikola\ШАГ\2-й семестр\Windows Forms\kyrsova\RentalService\RentalService\obj\Debug\RentalService.RentCarsForm.resources
 D:\Mikola\ШАГ\2-й семестр\Windows Forms\kyrsova\RentalService\RentalService\obj\Debug\RentalService.ChangePasswordForm.resources
 D:\Mikola\ШАГ\2-й семестр\Windows Forms\kyrsova\RentalService\RentalService\obj\Debug\RentalService.ChangeEmailForm.resources
+D:\Mikola\ШАГ\2-й семестр\Windows Forms\kyrsova\RentalService\RentalService\obj\Debug\RentalService.ReplishBalanceForm.resources
