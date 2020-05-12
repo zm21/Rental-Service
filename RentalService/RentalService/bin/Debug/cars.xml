@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<ArrayOfRentalCar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RentalCar>
+    <Brand>Tesla</Brand>
+    <Model>X</Model>
+    <LicensePlate>BK1177AA</LicensePlate>
+    <Type>Electric car</Type>
+    <Available>true</Available>
+    <AvailableFrom>2020-05-12T16:17:10.9012065+03:00</AvailableFrom>
+    <RentedID>0</RentedID>
+    <PricePerDay>315</PricePerDay>
+  </RentalCar>
+  <RentalCar>
+    <Brand>Mercedes</Brand>
+    <Model>c63</Model>
+    <LicensePlate>BK0888AK</LicensePlate>
+    <Type>Sport coupe</Type>
+    <Available>true</Available>
+    <AvailableFrom>2020-05-12T16:32:54.3475978+03:00</AvailableFrom>
+    <RentedID>0</RentedID>
+    <PricePerDay>275</PricePerDay>
+  </RentalCar>
+</ArrayOfRentalCar>

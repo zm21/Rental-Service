@@ -5,10 +5,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Serialization;
 
 namespace RentalService
 {
@@ -17,7 +19,7 @@ namespace RentalService
         private Form ActiveForm;
         private User user;
         private List<RentalCar> cars;
-        private string path_to_cars;
+        public static string path_to_cars = "cars.xml";
         public RentalSerivce(User user)
         {
             InitializeComponent();
@@ -28,8 +30,7 @@ namespace RentalService
             DateTime cur_date = DateTime.Now;
             lb_time.Text = cur_date.ToLongTimeString();
             lb_strdate.Text = cur_date.ToLongDateString();
-            path_to_cars = "cars.bin";
-            cars = new List<RentalCar>();
+            cars = DeserializeCars();
             //LoadCarsFromFile();
         }
         private void HideSubMenu()
@@ -112,6 +113,24 @@ namespace RentalService
         {
             pnDesktop.BringToFront();
             HideSubMenu();
+        }
+        public static List<RentalCar> DeserializeCars()
+        {
+            List<RentalCar> rentalCars = new List<RentalCar>();
+            XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<RentalCar>));
+            using (Stream fStream = File.OpenRead(path_to_cars))
+            {
+                rentalCars = (List<RentalCar>)xmlSerializer.Deserialize(fStream);
+            }
+            return rentalCars;
+        }
+        public static void SerializeCars(List<RentalCar> rentalCars)
+        {
+            XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<RentalCar>));
+            using (Stream fStream = File.Create(path_to_cars))
+            {
+                xmlSerializer.Serialize(fStream, rentalCars);
+            }
         }
     }
 }

@@ -51,6 +51,7 @@
             this.Model = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LicensePlate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.chb_sedan = new Guna.UI.WinForms.GunaCheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid_cars)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,7 +77,7 @@
             this.chb_sportCoupe.FillColor = System.Drawing.Color.White;
             this.chb_sportCoupe.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.chb_sportCoupe.ForeColor = System.Drawing.Color.White;
-            this.chb_sportCoupe.Location = new System.Drawing.Point(12, 84);
+            this.chb_sportCoupe.Location = new System.Drawing.Point(12, 66);
             this.chb_sportCoupe.Name = "chb_sportCoupe";
             this.chb_sportCoupe.Size = new System.Drawing.Size(117, 23);
             this.chb_sportCoupe.TabIndex = 2;
@@ -90,7 +91,7 @@
             this.chb_suv.FillColor = System.Drawing.Color.White;
             this.chb_suv.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.chb_suv.ForeColor = System.Drawing.Color.White;
-            this.chb_suv.Location = new System.Drawing.Point(12, 134);
+            this.chb_suv.Location = new System.Drawing.Point(12, 116);
             this.chb_suv.Name = "chb_suv";
             this.chb_suv.Size = new System.Drawing.Size(60, 23);
             this.chb_suv.TabIndex = 3;
@@ -104,7 +105,7 @@
             this.chb_stationWagon.FillColor = System.Drawing.Color.White;
             this.chb_stationWagon.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.chb_stationWagon.ForeColor = System.Drawing.Color.White;
-            this.chb_stationWagon.Location = new System.Drawing.Point(12, 184);
+            this.chb_stationWagon.Location = new System.Drawing.Point(12, 166);
             this.chb_stationWagon.Name = "chb_stationWagon";
             this.chb_stationWagon.Size = new System.Drawing.Size(134, 23);
             this.chb_stationWagon.TabIndex = 4;
@@ -118,7 +119,7 @@
             this.chb_minivan.FillColor = System.Drawing.Color.White;
             this.chb_minivan.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.chb_minivan.ForeColor = System.Drawing.Color.White;
-            this.chb_minivan.Location = new System.Drawing.Point(12, 234);
+            this.chb_minivan.Location = new System.Drawing.Point(12, 216);
             this.chb_minivan.Name = "chb_minivan";
             this.chb_minivan.Size = new System.Drawing.Size(89, 23);
             this.chb_minivan.TabIndex = 5;
@@ -132,7 +133,7 @@
             this.chb_electricCar.FillColor = System.Drawing.Color.White;
             this.chb_electricCar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.chb_electricCar.ForeColor = System.Drawing.Color.White;
-            this.chb_electricCar.Location = new System.Drawing.Point(12, 284);
+            this.chb_electricCar.Location = new System.Drawing.Point(12, 266);
             this.chb_electricCar.Name = "chb_electricCar";
             this.chb_electricCar.Size = new System.Drawing.Size(108, 23);
             this.chb_electricCar.TabIndex = 6;
@@ -146,7 +147,7 @@
             this.chb_cabriolet.FillColor = System.Drawing.Color.White;
             this.chb_cabriolet.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.chb_cabriolet.ForeColor = System.Drawing.Color.White;
-            this.chb_cabriolet.Location = new System.Drawing.Point(12, 334);
+            this.chb_cabriolet.Location = new System.Drawing.Point(12, 316);
             this.chb_cabriolet.Name = "chb_cabriolet";
             this.chb_cabriolet.Size = new System.Drawing.Size(96, 23);
             this.chb_cabriolet.TabIndex = 7;
@@ -192,7 +193,7 @@
             // gunaSeparator2
             // 
             this.gunaSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(178)))), ((int)(((byte)(249)))));
-            this.gunaSeparator2.Location = new System.Drawing.Point(-1, 381);
+            this.gunaSeparator2.Location = new System.Drawing.Point(-1, 395);
             this.gunaSeparator2.Name = "gunaSeparator2";
             this.gunaSeparator2.Size = new System.Drawing.Size(147, 10);
             this.gunaSeparator2.TabIndex = 11;
@@ -230,7 +231,6 @@
             // 
             this.DataGrid_cars.AllowUserToAddRows = false;
             this.DataGrid_cars.AllowUserToDeleteRows = false;
-            this.DataGrid_cars.AllowUserToResizeColumns = false;
             this.DataGrid_cars.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.DataGrid_cars.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
@@ -240,7 +240,7 @@
             this.DataGrid_cars.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DataGrid_cars.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(60)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -248,6 +248,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DataGrid_cars.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DataGrid_cars.ColumnHeadersHeight = 32;
+            this.DataGrid_cars.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DataGrid_cars.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Available,
             this.AvailableFrom,
@@ -257,19 +258,22 @@
             this.LicensePlate,
             this.Type});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DataGrid_cars.DefaultCellStyle = dataGridViewCellStyle3;
             this.DataGrid_cars.EnableHeadersVisualStyles = false;
-            this.DataGrid_cars.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DataGrid_cars.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.DataGrid_cars.Location = new System.Drawing.Point(152, 0);
+            this.DataGrid_cars.MultiSelect = false;
             this.DataGrid_cars.Name = "DataGrid_cars";
             this.DataGrid_cars.ReadOnly = true;
             this.DataGrid_cars.RowHeadersVisible = false;
+            this.DataGrid_cars.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(4)))), ((int)(((byte)(52)))));
+            this.DataGrid_cars.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.DataGrid_cars.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DataGrid_cars.Size = new System.Drawing.Size(751, 531);
             this.DataGrid_cars.TabIndex = 13;
@@ -280,21 +284,21 @@
             this.DataGrid_cars.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.DataGrid_cars.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             this.DataGrid_cars.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(4)))), ((int)(((byte)(52)))));
-            this.DataGrid_cars.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DataGrid_cars.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.DataGrid_cars.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.DataGrid_cars.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(60)))));
             this.DataGrid_cars.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.DataGrid_cars.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DataGrid_cars.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.DataGrid_cars.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.DataGrid_cars.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DataGrid_cars.ThemeStyle.HeaderStyle.Height = 32;
             this.DataGrid_cars.ThemeStyle.ReadOnly = true;
-            this.DataGrid_cars.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.DataGrid_cars.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.DataGrid_cars.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.DataGrid_cars.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.DataGrid_cars.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.DataGrid_cars.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.DataGrid_cars.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.White;
             this.DataGrid_cars.ThemeStyle.RowsStyle.Height = 22;
-            this.DataGrid_cars.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DataGrid_cars.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.DataGrid_cars.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.DataGrid_cars.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             // 
             // Available
             // 
@@ -338,12 +342,27 @@
             this.Type.Name = "Type";
             this.Type.ReadOnly = true;
             // 
+            // chb_sedan
+            // 
+            this.chb_sedan.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(41)))), ((int)(((byte)(86)))));
+            this.chb_sedan.CheckedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(41)))), ((int)(((byte)(86)))));
+            this.chb_sedan.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.chb_sedan.FillColor = System.Drawing.Color.White;
+            this.chb_sedan.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.chb_sedan.ForeColor = System.Drawing.Color.White;
+            this.chb_sedan.Location = new System.Drawing.Point(12, 366);
+            this.chb_sedan.Name = "chb_sedan";
+            this.chb_sedan.Size = new System.Drawing.Size(74, 23);
+            this.chb_sedan.TabIndex = 14;
+            this.chb_sedan.Text = "Sedan";
+            // 
             // RentCarsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(4)))), ((int)(((byte)(52)))));
             this.ClientSize = new System.Drawing.Size(904, 531);
+            this.Controls.Add(this.chb_sedan);
             this.Controls.Add(this.DataGrid_cars);
             this.Controls.Add(this.bt_rent);
             this.Controls.Add(this.gunaSeparator2);
@@ -360,6 +379,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RentCarsForm";
             this.Text = "Cars";
+            this.Load += new System.EventHandler(this.RentCarsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid_cars)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -387,5 +407,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Model;
         private System.Windows.Forms.DataGridViewTextBoxColumn LicensePlate;
         private System.Windows.Forms.DataGridViewTextBoxColumn Type;
+        private Guna.UI.WinForms.GunaCheckBox chb_sedan;
     }
 }

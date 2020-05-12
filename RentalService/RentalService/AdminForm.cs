@@ -23,7 +23,7 @@ namespace RentalService
             this.admin = admin;
             lb_login.Text = admin.Login;
             HideSubMenu();
-            cars = new List<RentalCar>(); // potom syda load
+            cars = RentalSerivce.DeserializeCars();
         }
 
         private void bt_logout_Click(object sender, EventArgs e)
@@ -88,7 +88,7 @@ namespace RentalService
 
         private void sbtR_addCar_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new AddCarForm(pnDesktop));
+            OpenChildForm(new AddCarForm(pnDesktop, cars));
             HideSubMenu();
         }
     }
