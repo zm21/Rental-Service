@@ -203,6 +203,7 @@
             this.bt_replishBalance.Size = new System.Drawing.Size(220, 48);
             this.bt_replishBalance.TabIndex = 5;
             this.bt_replishBalance.Text = "Replish balance";
+            this.bt_replishBalance.Click += new System.EventHandler(this.bt_replishBalance_Click);
             // 
             // pnSubRentMenu
             // 

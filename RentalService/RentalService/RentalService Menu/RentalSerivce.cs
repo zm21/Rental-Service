@@ -132,5 +132,11 @@ namespace RentalService
                 xmlSerializer.Serialize(fStream, rentalCars);
             }
         }
+
+        private void bt_replishBalance_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new ReplishBalanceForm(pnDesktop, user, lb_Balance));
+            HideSubMenu();
+        }
     }
 }
