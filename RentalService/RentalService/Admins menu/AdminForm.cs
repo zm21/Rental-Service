@@ -33,8 +33,6 @@ namespace RentalService
         }
         private void HideSubMenu()
         {
-            if (pnSubAccountSettings.Visible)
-                pnSubAccountSettings.Visible = false;
             if (pnSubRentMenu.Visible)
                 pnSubRentMenu.Visible = false;
         }

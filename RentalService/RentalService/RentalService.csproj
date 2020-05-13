@@ -136,11 +136,11 @@
       <DependentUpon>RentalSerivce.cs</DependentUpon>
     </Compile>
     <Compile Include="Users\Admin.cs" />
-    <Compile Include="Login and SignUp\Form1.cs">
+    <Compile Include="Login and SignUp\LoginOrSignUpForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login and SignUp\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Login and SignUp\LoginOrSignUpForm.Designer.cs">
+      <DependentUpon>LoginOrSignUpForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Users\IUser.cs" />
     <Compile Include="MsgBox.cs">
@@ -176,8 +176,8 @@
     <EmbeddedResource Include="RentalService Menu\RentCarsForm.resx">
       <DependentUpon>RentCarsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login and SignUp\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Login and SignUp\LoginOrSignUpForm.resx">
+      <DependentUpon>LoginOrSignUpForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MsgBox.resx">
       <DependentUpon>MsgBox.cs</DependentUpon>

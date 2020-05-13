@@ -43,8 +43,8 @@
             this.bt_Rent = new Guna.UI.WinForms.GunaButton();
             this.bt_Home = new Guna.UI.WinForms.GunaButton();
             this.pnLogo = new Guna.UI.WinForms.GunaPanel();
-            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
-            this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
+            this.gunaPictureBoxLogo = new Guna.UI.WinForms.GunaPictureBox();
+            this.gunaPanelControl = new Guna.UI.WinForms.GunaPanel();
             this.gunaControlBox2 = new Guna.UI.WinForms.GunaControlBox();
             this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
             this.pnUserInfo = new Guna.UI.WinForms.GunaPanel();
@@ -53,25 +53,33 @@
             this.pnLogin = new Guna.UI.WinForms.GunaPanel();
             this.lb_login = new System.Windows.Forms.Label();
             this.pnAvaUser = new Guna.UI.WinForms.GunaPanel();
-            this.gunaPictureBox2 = new Guna.UI.WinForms.GunaPictureBox();
+            this.gunaPictureBoxAvatar = new Guna.UI.WinForms.GunaPictureBox();
             this.pnDesktop = new Guna.UI.WinForms.GunaPanel();
             this.lb_strdate = new System.Windows.Forms.Label();
             this.lb_time = new System.Windows.Forms.Label();
-            this.gunaPictureBox3 = new Guna.UI.WinForms.GunaPictureBox();
+            this.gunaPictureBoxDesktopLogo = new Guna.UI.WinForms.GunaPictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pnChildForm = new Guna.UI.WinForms.GunaPanel();
+            this.gunaDragControlMenu = new Guna.UI.WinForms.GunaDragControl(this.components);
+            this.gunaDragControlLogo = new Guna.UI.WinForms.GunaDragControl(this.components);
+            this.gunaDragControlDesktopLogo = new Guna.UI.WinForms.GunaDragControl(this.components);
+            this.gunaDragControlDesktop = new Guna.UI.WinForms.GunaDragControl(this.components);
+            this.gunaDragControl = new Guna.UI.WinForms.GunaDragControl(this.components);
+            this.gunaDragControlAvatar = new Guna.UI.WinForms.GunaDragControl(this.components);
+            this.gunaDragControlpnLogin = new Guna.UI.WinForms.GunaDragControl(this.components);
+            this.gunaDragControlUserInfo = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.pnMenu.SuspendLayout();
             this.pnSubAccountSettings.SuspendLayout();
             this.pnSubRentMenu.SuspendLayout();
             this.pnLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
-            this.gunaPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBoxLogo)).BeginInit();
+            this.gunaPanelControl.SuspendLayout();
             this.pnUserInfo.SuspendLayout();
             this.pnLogin.SuspendLayout();
             this.pnAvaUser.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBoxAvatar)).BeginInit();
             this.pnDesktop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBoxDesktopLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // pnMenu
@@ -345,34 +353,34 @@
             // 
             // pnLogo
             // 
-            this.pnLogo.Controls.Add(this.gunaPictureBox1);
+            this.pnLogo.Controls.Add(this.gunaPictureBoxLogo);
             this.pnLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnLogo.Location = new System.Drawing.Point(0, 0);
             this.pnLogo.Name = "pnLogo";
             this.pnLogo.Size = new System.Drawing.Size(220, 99);
             this.pnLogo.TabIndex = 0;
             // 
-            // gunaPictureBox1
+            // gunaPictureBoxLogo
             // 
-            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox1.Image = global::RentalService.Properties.Resources.menulogo;
-            this.gunaPictureBox1.Location = new System.Drawing.Point(12, 8);
-            this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(195, 85);
-            this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaPictureBox1.TabIndex = 0;
-            this.gunaPictureBox1.TabStop = false;
+            this.gunaPictureBoxLogo.BaseColor = System.Drawing.Color.White;
+            this.gunaPictureBoxLogo.Image = global::RentalService.Properties.Resources.menulogo;
+            this.gunaPictureBoxLogo.Location = new System.Drawing.Point(12, 8);
+            this.gunaPictureBoxLogo.Name = "gunaPictureBoxLogo";
+            this.gunaPictureBoxLogo.Size = new System.Drawing.Size(195, 85);
+            this.gunaPictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.gunaPictureBoxLogo.TabIndex = 0;
+            this.gunaPictureBoxLogo.TabStop = false;
             // 
-            // gunaPanel1
+            // gunaPanelControl
             // 
-            this.gunaPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(60)))));
-            this.gunaPanel1.Controls.Add(this.gunaControlBox2);
-            this.gunaPanel1.Controls.Add(this.gunaControlBox1);
-            this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gunaPanel1.Location = new System.Drawing.Point(220, 0);
-            this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(904, 29);
-            this.gunaPanel1.TabIndex = 1;
+            this.gunaPanelControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(60)))));
+            this.gunaPanelControl.Controls.Add(this.gunaControlBox2);
+            this.gunaPanelControl.Controls.Add(this.gunaControlBox1);
+            this.gunaPanelControl.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gunaPanelControl.Location = new System.Drawing.Point(220, 0);
+            this.gunaPanelControl.Name = "gunaPanelControl";
+            this.gunaPanelControl.Size = new System.Drawing.Size(904, 29);
+            this.gunaPanelControl.TabIndex = 1;
             // 
             // gunaControlBox2
             // 
@@ -465,29 +473,29 @@
             // 
             // pnAvaUser
             // 
-            this.pnAvaUser.Controls.Add(this.gunaPictureBox2);
+            this.pnAvaUser.Controls.Add(this.gunaPictureBoxAvatar);
             this.pnAvaUser.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnAvaUser.Location = new System.Drawing.Point(840, 0);
             this.pnAvaUser.Name = "pnAvaUser";
             this.pnAvaUser.Size = new System.Drawing.Size(64, 70);
             this.pnAvaUser.TabIndex = 3;
             // 
-            // gunaPictureBox2
+            // gunaPictureBoxAvatar
             // 
-            this.gunaPictureBox2.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox2.Image = global::RentalService.Properties.Resources.people;
-            this.gunaPictureBox2.Location = new System.Drawing.Point(3, 6);
-            this.gunaPictureBox2.Name = "gunaPictureBox2";
-            this.gunaPictureBox2.Size = new System.Drawing.Size(55, 55);
-            this.gunaPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaPictureBox2.TabIndex = 0;
-            this.gunaPictureBox2.TabStop = false;
+            this.gunaPictureBoxAvatar.BaseColor = System.Drawing.Color.White;
+            this.gunaPictureBoxAvatar.Image = global::RentalService.Properties.Resources.people;
+            this.gunaPictureBoxAvatar.Location = new System.Drawing.Point(3, 6);
+            this.gunaPictureBoxAvatar.Name = "gunaPictureBoxAvatar";
+            this.gunaPictureBoxAvatar.Size = new System.Drawing.Size(55, 55);
+            this.gunaPictureBoxAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.gunaPictureBoxAvatar.TabIndex = 0;
+            this.gunaPictureBoxAvatar.TabStop = false;
             // 
             // pnDesktop
             // 
             this.pnDesktop.Controls.Add(this.lb_strdate);
             this.pnDesktop.Controls.Add(this.lb_time);
-            this.pnDesktop.Controls.Add(this.gunaPictureBox3);
+            this.pnDesktop.Controls.Add(this.gunaPictureBoxDesktopLogo);
             this.pnDesktop.Location = new System.Drawing.Point(220, 99);
             this.pnDesktop.Name = "pnDesktop";
             this.pnDesktop.Size = new System.Drawing.Size(904, 531);
@@ -515,16 +523,16 @@
             this.lb_time.TabIndex = 2;
             this.lb_time.Text = "00:00:00";
             // 
-            // gunaPictureBox3
+            // gunaPictureBoxDesktopLogo
             // 
-            this.gunaPictureBox3.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox3.Image = global::RentalService.Properties.Resources.logofordesktop1;
-            this.gunaPictureBox3.Location = new System.Drawing.Point(201, 119);
-            this.gunaPictureBox3.Name = "gunaPictureBox3";
-            this.gunaPictureBox3.Size = new System.Drawing.Size(520, 179);
-            this.gunaPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.gunaPictureBox3.TabIndex = 0;
-            this.gunaPictureBox3.TabStop = false;
+            this.gunaPictureBoxDesktopLogo.BaseColor = System.Drawing.Color.White;
+            this.gunaPictureBoxDesktopLogo.Image = global::RentalService.Properties.Resources.logofordesktop1;
+            this.gunaPictureBoxDesktopLogo.Location = new System.Drawing.Point(201, 119);
+            this.gunaPictureBoxDesktopLogo.Name = "gunaPictureBoxDesktopLogo";
+            this.gunaPictureBoxDesktopLogo.Size = new System.Drawing.Size(520, 179);
+            this.gunaPictureBoxDesktopLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.gunaPictureBoxDesktopLogo.TabIndex = 0;
+            this.gunaPictureBoxDesktopLogo.TabStop = false;
             // 
             // timer1
             // 
@@ -539,6 +547,38 @@
             this.pnChildForm.Size = new System.Drawing.Size(904, 531);
             this.pnChildForm.TabIndex = 4;
             // 
+            // gunaDragControlMenu
+            // 
+            this.gunaDragControlMenu.TargetControl = this.pnMenu;
+            // 
+            // gunaDragControlLogo
+            // 
+            this.gunaDragControlLogo.TargetControl = this.gunaPictureBoxLogo;
+            // 
+            // gunaDragControlDesktopLogo
+            // 
+            this.gunaDragControlDesktopLogo.TargetControl = this.gunaPictureBoxDesktopLogo;
+            // 
+            // gunaDragControlDesktop
+            // 
+            this.gunaDragControlDesktop.TargetControl = this.pnDesktop;
+            // 
+            // gunaDragControl
+            // 
+            this.gunaDragControl.TargetControl = this.gunaPanelControl;
+            // 
+            // gunaDragControlAvatar
+            // 
+            this.gunaDragControlAvatar.TargetControl = this.gunaPictureBoxAvatar;
+            // 
+            // gunaDragControlpnLogin
+            // 
+            this.gunaDragControlpnLogin.TargetControl = this.pnLogin;
+            // 
+            // gunaDragControlUserInfo
+            // 
+            this.gunaDragControlUserInfo.TargetControl = this.pnUserInfo;
+            // 
             // RentalSerivce
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -546,7 +586,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(4)))), ((int)(((byte)(52)))));
             this.ClientSize = new System.Drawing.Size(1124, 630);
             this.Controls.Add(this.pnUserInfo);
-            this.Controls.Add(this.gunaPanel1);
+            this.Controls.Add(this.gunaPanelControl);
             this.Controls.Add(this.pnMenu);
             this.Controls.Add(this.pnDesktop);
             this.Controls.Add(this.pnChildForm);
@@ -559,17 +599,17 @@
             this.pnSubAccountSettings.ResumeLayout(false);
             this.pnSubRentMenu.ResumeLayout(false);
             this.pnLogo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
-            this.gunaPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBoxLogo)).EndInit();
+            this.gunaPanelControl.ResumeLayout(false);
             this.pnUserInfo.ResumeLayout(false);
             this.pnUserInfo.PerformLayout();
             this.pnLogin.ResumeLayout(false);
             this.pnLogin.PerformLayout();
             this.pnAvaUser.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBoxAvatar)).EndInit();
             this.pnDesktop.ResumeLayout(false);
             this.pnDesktop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBoxDesktopLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -578,10 +618,10 @@
 
         private Guna.UI.WinForms.GunaPanel pnMenu;
         private Guna.UI.WinForms.GunaPanel pnLogo;
-        private Guna.UI.WinForms.GunaPanel gunaPanel1;
+        private Guna.UI.WinForms.GunaPanel gunaPanelControl;
         private Guna.UI.WinForms.GunaControlBox gunaControlBox2;
         private Guna.UI.WinForms.GunaControlBox gunaControlBox1;
-        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
+        private Guna.UI.WinForms.GunaPictureBox gunaPictureBoxLogo;
         private Guna.UI.WinForms.GunaButton bt_Home;
         private Guna.UI.WinForms.GunaButton bt_Rent;
         private Guna.UI.WinForms.GunaButton bt_logout;
@@ -595,16 +635,24 @@
         private Guna.UI.WinForms.GunaButton sbtAS_changePasswd;
         private Guna.UI.WinForms.GunaPanel pnUserInfo;
         private Guna.UI.WinForms.GunaPanel pnAvaUser;
-        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox2;
+        private Guna.UI.WinForms.GunaPictureBox gunaPictureBoxAvatar;
         private Guna.UI.WinForms.GunaPanel pnLogin;
         private System.Windows.Forms.Label lb_login;
         private System.Windows.Forms.Label lb_yourBalance;
         private System.Windows.Forms.Label lb_Balance;
         private Guna.UI.WinForms.GunaPanel pnDesktop;
-        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox3;
+        private Guna.UI.WinForms.GunaPictureBox gunaPictureBoxDesktopLogo;
         private System.Windows.Forms.Label lb_time;
         private System.Windows.Forms.Label lb_strdate;
         private System.Windows.Forms.Timer timer1;
         private Guna.UI.WinForms.GunaPanel pnChildForm;
+        private Guna.UI.WinForms.GunaDragControl gunaDragControlMenu;
+        private Guna.UI.WinForms.GunaDragControl gunaDragControlLogo;
+        private Guna.UI.WinForms.GunaDragControl gunaDragControlDesktopLogo;
+        private Guna.UI.WinForms.GunaDragControl gunaDragControlDesktop;
+        private Guna.UI.WinForms.GunaDragControl gunaDragControl;
+        private Guna.UI.WinForms.GunaDragControl gunaDragControlAvatar;
+        private Guna.UI.WinForms.GunaDragControl gunaDragControlpnLogin;
+        public Guna.UI.WinForms.GunaDragControl gunaDragControlUserInfo;
     }
 }
