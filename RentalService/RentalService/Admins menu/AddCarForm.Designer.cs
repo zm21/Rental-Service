@@ -41,6 +41,7 @@
             this.bt_cacneclChanges = new Guna.UI.WinForms.GunaGradientButton();
             this.bt_addcar = new Guna.UI.WinForms.GunaGradientButton();
             this.numeric_pricePerDay = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_pricePerDay)).BeginInit();
             this.SuspendLayout();
             // 
@@ -289,12 +290,24 @@
             0,
             0});
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(178)))), ((int)(((byte)(249)))));
+            this.label6.Location = new System.Drawing.Point(516, 192);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(99, 19);
+            this.label6.TabIndex = 28;
+            this.label6.Text = "Price per day";
+            // 
             // AddCarForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(4)))), ((int)(((byte)(52)))));
             this.ClientSize = new System.Drawing.Size(904, 531);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.numeric_pricePerDay);
             this.Controls.Add(this.bt_cacneclChanges);
             this.Controls.Add(this.bt_addcar);
@@ -331,5 +344,6 @@
         private Guna.UI.WinForms.GunaGradientButton bt_cacneclChanges;
         private Guna.UI.WinForms.GunaGradientButton bt_addcar;
         private Guna.UI2.WinForms.Guna2NumericUpDown numeric_pricePerDay;
+        private System.Windows.Forms.Label label6;
     }
 }

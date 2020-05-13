@@ -114,7 +114,7 @@ namespace RentalService
         }
         private void bt_rent_Click(object sender, EventArgs e)
         {
-            if(DataGrid_cars.SelectedRows[0]!=null)
+            if(DataGrid_cars.Rows.Count>0)
             {
                 RentalCar rentalCar = new RentalCar()
                 {
@@ -154,6 +154,8 @@ namespace RentalService
                         {
                             AddCarToDataGrid(car);
                         }
+                        MsgBox msgBox = new MsgBox("Rental success", "The car is successfully rented");
+                        msgBox.ShowDialog();
                     }
                     else
                     {

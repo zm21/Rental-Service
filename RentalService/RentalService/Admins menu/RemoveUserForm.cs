@@ -45,7 +45,7 @@ namespace RentalService.Admins_menu
                         emails.Add(reader.ReadLine());
                 }
                 Users.User user_for_delete = new Users.User();
-                user_for_delete.Deserialize(Form1.users_path + user_for_delete.Login);
+                user_for_delete.Deserialize(Form1.users_path + txtbox_userLogin.Text);
                 emails.Remove(user_for_delete.Email);
                 using (var writer = new StreamWriter("emails/emails"))
                 {

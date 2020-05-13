@@ -129,6 +129,11 @@ namespace RentalService
                         else
                             this.Close();
                     }
+                    else
+                    {
+                        MsgBox msgBox = new MsgBox("Authorization error", "Wrong password!");
+                        msgBox.ShowDialog();
+                    }
                 }
                 else
                 {

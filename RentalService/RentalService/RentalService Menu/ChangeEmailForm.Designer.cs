@@ -141,11 +141,12 @@
             this.txtbox_Passwd.Location = new System.Drawing.Point(322, 101);
             this.txtbox_Passwd.MaxLength = 10;
             this.txtbox_Passwd.Name = "txtbox_Passwd";
-            this.txtbox_Passwd.PasswordChar = '*';
+            this.txtbox_Passwd.PasswordChar = '●';
             this.txtbox_Passwd.Radius = 2;
             this.txtbox_Passwd.SelectedText = "";
             this.txtbox_Passwd.Size = new System.Drawing.Size(248, 47);
             this.txtbox_Passwd.TabIndex = 17;
+            this.txtbox_Passwd.UseSystemPasswordChar = true;
             // 
             // label3
             // 

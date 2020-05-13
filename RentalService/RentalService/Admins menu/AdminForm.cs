@@ -47,7 +47,7 @@ namespace RentalService
 
         private void sbtR_Cars_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new RentCarsForm(cars, admin, RentCarsForm.TableMode.AllCars, lb_Balance));
+            OpenChildForm(new AdminCarsMenu(cars));
             HideSubMenu();
         }
 
