@@ -31,7 +31,7 @@ namespace RentalService
             lb_time.Text = cur_date.ToLongTimeString();
             lb_strdate.Text = cur_date.ToLongDateString();
             cars = DeserializeCars();
-            //LoadCarsFromFile();
+            UpdateCarsStatus(cars);
         }
         private void HideSubMenu()
         {
@@ -67,12 +67,15 @@ namespace RentalService
 
         private void sbtR_Cars_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new RentCarsForm(cars, user));
+            UpdateCarsStatus(cars);
+            OpenChildForm(new RentCarsForm(cars, user, RentCarsForm.TableMode.AllCars, lb_Balance));
             HideSubMenu();
         }
 
         private void sbtR_myRcars_Click(object sender, EventArgs e)
         {
+            UpdateCarsStatus(cars);
+            OpenChildForm(new RentCarsForm(cars, user, RentCarsForm.TableMode.MyRentedCars, lb_Balance));
             HideSubMenu();
         }
 
@@ -137,6 +140,22 @@ namespace RentalService
         {
             OpenChildForm(new ReplishBalanceForm(pnDesktop, user, lb_Balance));
             HideSubMenu();
+        }
+        public static void UpdateCarsStatus(List<RentalCar> rentalCars)
+        {
+            for (int i = 0; i < rentalCars.Count; i++)
+            {
+                if (!rentalCars[i].Available)
+                {
+                    if (rentalCars[i].AvailableFrom <= DateTime.Now)
+                    {
+                        rentalCars[i].AvailableFrom = DateTime.Now;
+                        rentalCars[i].Available = true;
+                        rentalCars[i].RentedID = 0;
+                    }
+                }
+            }
+            SerializeCars(rentalCars);
         }
     }
 }

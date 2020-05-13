@@ -1,4 +1,5 @@
-﻿using RentalService.Users;
+﻿using RentalService.Admins_menu;
+using RentalService.Users;
 using RentCar.Transport;
 using System;
 using System.Collections.Generic;
@@ -46,7 +47,7 @@ namespace RentalService
 
         private void sbtR_Cars_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new RentCarsForm(cars, admin));
+            OpenChildForm(new RentCarsForm(cars, admin, RentCarsForm.TableMode.AllCars, lb_Balance));
             HideSubMenu();
         }
 
@@ -89,6 +90,12 @@ namespace RentalService
         private void sbtR_addCar_Click(object sender, EventArgs e)
         {
             OpenChildForm(new AddCarForm(pnDesktop, cars));
+            HideSubMenu();
+        }
+
+        private void bt_removeUser_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new RemoveUserForm(pnDesktop));
             HideSubMenu();
         }
     }

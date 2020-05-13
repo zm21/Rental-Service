@@ -52,7 +52,10 @@
             this.LicensePlate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chb_sedan = new Guna.UI.WinForms.GunaCheckBox();
+            this.lb_numOfDayRent = new System.Windows.Forms.Label();
+            this.numeric_daysCount = new Guna.UI2.WinForms.Guna2NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid_cars)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_daysCount)).BeginInit();
             this.SuspendLayout();
             // 
             // chb_available
@@ -175,7 +178,7 @@
             this.bt_find.ForeColor = System.Drawing.Color.White;
             this.bt_find.Image = null;
             this.bt_find.ImageSize = new System.Drawing.Size(20, 20);
-            this.bt_find.Location = new System.Drawing.Point(12, 411);
+            this.bt_find.Location = new System.Drawing.Point(12, 447);
             this.bt_find.Name = "bt_find";
             this.bt_find.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(145)))), ((int)(((byte)(221)))));
             this.bt_find.OnHoverBaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(255)))));
@@ -212,7 +215,7 @@
             this.bt_rent.ForeColor = System.Drawing.Color.White;
             this.bt_rent.Image = null;
             this.bt_rent.ImageSize = new System.Drawing.Size(20, 20);
-            this.bt_rent.Location = new System.Drawing.Point(12, 471);
+            this.bt_rent.Location = new System.Drawing.Point(689, 447);
             this.bt_rent.Name = "bt_rent";
             this.bt_rent.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(145)))), ((int)(((byte)(221)))));
             this.bt_rent.OnHoverBaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(255)))));
@@ -275,7 +278,7 @@
             this.DataGrid_cars.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(4)))), ((int)(((byte)(52)))));
             this.DataGrid_cars.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.DataGrid_cars.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGrid_cars.Size = new System.Drawing.Size(751, 531);
+            this.DataGrid_cars.Size = new System.Drawing.Size(751, 405);
             this.DataGrid_cars.TabIndex = 13;
             this.DataGrid_cars.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.DataGrid_cars.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -356,12 +359,64 @@
             this.chb_sedan.TabIndex = 14;
             this.chb_sedan.Text = "Sedan";
             // 
+            // lb_numOfDayRent
+            // 
+            this.lb_numOfDayRent.AutoSize = true;
+            this.lb_numOfDayRent.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lb_numOfDayRent.ForeColor = System.Drawing.Color.White;
+            this.lb_numOfDayRent.Location = new System.Drawing.Point(242, 447);
+            this.lb_numOfDayRent.Name = "lb_numOfDayRent";
+            this.lb_numOfDayRent.Size = new System.Drawing.Size(248, 28);
+            this.lb_numOfDayRent.TabIndex = 15;
+            this.lb_numOfDayRent.Text = "Number of days for rent:";
+            // 
+            // numeric_daysCount
+            // 
+            this.numeric_daysCount.BackColor = System.Drawing.Color.Transparent;
+            this.numeric_daysCount.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(50)))), ((int)(((byte)(100)))));
+            this.numeric_daysCount.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.numeric_daysCount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.numeric_daysCount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.numeric_daysCount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.numeric_daysCount.DisabledState.Parent = this.numeric_daysCount;
+            this.numeric_daysCount.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
+            this.numeric_daysCount.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
+            this.numeric_daysCount.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(41)))), ((int)(((byte)(86)))));
+            this.numeric_daysCount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.numeric_daysCount.FocusedState.Parent = this.numeric_daysCount;
+            this.numeric_daysCount.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.numeric_daysCount.ForeColor = System.Drawing.Color.White;
+            this.numeric_daysCount.Location = new System.Drawing.Point(529, 447);
+            this.numeric_daysCount.Maximum = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
+            this.numeric_daysCount.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numeric_daysCount.Name = "numeric_daysCount";
+            this.numeric_daysCount.ShadowDecoration.Parent = this.numeric_daysCount;
+            this.numeric_daysCount.Size = new System.Drawing.Size(100, 37);
+            this.numeric_daysCount.TabIndex = 29;
+            this.numeric_daysCount.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.numeric_daysCount.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(178)))), ((int)(((byte)(249)))));
+            this.numeric_daysCount.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // RentCarsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(4)))), ((int)(((byte)(52)))));
             this.ClientSize = new System.Drawing.Size(904, 531);
+            this.Controls.Add(this.numeric_daysCount);
+            this.Controls.Add(this.lb_numOfDayRent);
             this.Controls.Add(this.chb_sedan);
             this.Controls.Add(this.DataGrid_cars);
             this.Controls.Add(this.bt_rent);
@@ -381,6 +436,7 @@
             this.Text = "Cars";
             this.Load += new System.EventHandler(this.RentCarsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid_cars)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_daysCount)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -408,5 +464,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn LicensePlate;
         private System.Windows.Forms.DataGridViewTextBoxColumn Type;
         private Guna.UI.WinForms.GunaCheckBox chb_sedan;
+        private System.Windows.Forms.Label lb_numOfDayRent;
+        private Guna.UI2.WinForms.Guna2NumericUpDown numeric_daysCount;
     }
 }

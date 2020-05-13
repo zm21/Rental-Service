@@ -19,3 +19,4 @@ D:\Mikola\ШАГ\2-й семестр\Windows Forms\kyrsova\RentalService\RentalS
 D:\Mikola\ШАГ\2-й семестр\Windows Forms\kyrsova\RentalService\RentalService\obj\Debug\RentalService.ReplishBalanceForm.resources
 D:\Mikola\ШАГ\2-й семестр\Windows Forms\kyrsova\RentalService\RentalService\obj\Debug\RentalService.AdminForm.resources
 D:\Mikola\ШАГ\2-й семестр\Windows Forms\kyrsova\RentalService\RentalService\obj\Debug\RentalService.AddCarForm.resources
+D:\Mikola\ШАГ\2-й семестр\Windows Forms\kyrsova\RentalService\RentalService\obj\Debug\RentalService.Admins_menu.RemoveUserForm.resources

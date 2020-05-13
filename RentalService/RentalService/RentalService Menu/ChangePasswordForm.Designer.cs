@@ -65,11 +65,12 @@
             this.txtBox_newPasswd.Location = new System.Drawing.Point(323, 206);
             this.txtBox_newPasswd.MaxLength = 12;
             this.txtBox_newPasswd.Name = "txtBox_newPasswd";
-            this.txtBox_newPasswd.PasswordChar = '*';
+            this.txtBox_newPasswd.PasswordChar = '●';
             this.txtBox_newPasswd.Radius = 2;
             this.txtBox_newPasswd.SelectedText = "";
             this.txtBox_newPasswd.Size = new System.Drawing.Size(248, 47);
             this.txtBox_newPasswd.TabIndex = 10;
+            this.txtBox_newPasswd.UseSystemPasswordChar = true;
             // 
             // label4
             // 
@@ -96,11 +97,12 @@
             this.txtbox_oldPasswd.Location = new System.Drawing.Point(323, 112);
             this.txtbox_oldPasswd.MaxLength = 10;
             this.txtbox_oldPasswd.Name = "txtbox_oldPasswd";
-            this.txtbox_oldPasswd.PasswordChar = '*';
+            this.txtbox_oldPasswd.PasswordChar = '●';
             this.txtbox_oldPasswd.Radius = 2;
             this.txtbox_oldPasswd.SelectedText = "";
             this.txtbox_oldPasswd.Size = new System.Drawing.Size(248, 47);
             this.txtbox_oldPasswd.TabIndex = 8;
+            this.txtbox_oldPasswd.UseSystemPasswordChar = true;
             // 
             // label3
             // 
@@ -127,11 +129,12 @@
             this.txtBox_confirmNewPasswd.Location = new System.Drawing.Point(323, 304);
             this.txtBox_confirmNewPasswd.MaxLength = 12;
             this.txtBox_confirmNewPasswd.Name = "txtBox_confirmNewPasswd";
-            this.txtBox_confirmNewPasswd.PasswordChar = '*';
+            this.txtBox_confirmNewPasswd.PasswordChar = '●';
             this.txtBox_confirmNewPasswd.Radius = 2;
             this.txtBox_confirmNewPasswd.SelectedText = "";
             this.txtBox_confirmNewPasswd.Size = new System.Drawing.Size(248, 47);
             this.txtBox_confirmNewPasswd.TabIndex = 12;
+            this.txtBox_confirmNewPasswd.UseSystemPasswordChar = true;
             // 
             // label9
             // 

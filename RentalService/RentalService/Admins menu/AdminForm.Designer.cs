@@ -200,6 +200,7 @@
             this.bt_removeUser.Size = new System.Drawing.Size(220, 48);
             this.bt_removeUser.TabIndex = 5;
             this.bt_removeUser.Text = "Remove user";
+            this.bt_removeUser.Click += new System.EventHandler(this.bt_removeUser_Click);
             // 
             // pnSubRentMenu
             // 

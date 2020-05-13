@@ -33,7 +33,7 @@ namespace RentalService.Users
         public void Serialize()
         {
             BinaryFormatter binaryFormatter = new BinaryFormatter();
-            using (Stream fStream = File.Create("users/" + Login))
+            using (Stream fStream = File.Create(Form1.users_path + Login))
             {
                 binaryFormatter.Serialize(fStream, this);
             }

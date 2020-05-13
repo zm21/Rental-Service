@@ -10,15 +10,12 @@ namespace RentalService
 {
     public partial class Form1 : Form
     {
-        string users_path;
-        string admins_path;
+        public static string users_path = @"users/";
+        public static string admins_path = @"admins/";
         public Form1()
         {
             InitializeComponent();
-            Guna.UI.Lib.GraphicsHelper.ShadowForm(this);
-            users_path = @"users/";
-            admins_path = @"admins/";
-            
+            Guna.UI.Lib.GraphicsHelper.ShadowForm(this);  
         }
         private void bt_goto_SignUp_Click(object sender, EventArgs e)
         {
@@ -141,7 +138,7 @@ namespace RentalService
                 }
             }
             if(!is_admin_try)
-            if (!File.Exists("users/" + logTxtBox_login.Text))
+            if (!File.Exists(users_path + logTxtBox_login.Text))
             {
                 MsgBox msgBox = new MsgBox("Authorization error", "No user with this login was found!");
                 msgBox.ShowDialog();
@@ -149,7 +146,7 @@ namespace RentalService
             else
             {
                 User user = new User();
-                user.Deserialize("users/" + logTxtBox_login.Text);
+                user.Deserialize(users_path + logTxtBox_login.Text);
                 if(user.Passwd==logTxtBox_passwd.Text)
                 {
                     RentalSerivce rentalSerivce = new RentalSerivce(user);

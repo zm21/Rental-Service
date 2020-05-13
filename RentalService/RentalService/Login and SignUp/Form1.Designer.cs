@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Guna.UI.Animation.Animation animation2 = new Guna.UI.Animation.Animation();
+            Guna.UI.Animation.Animation animation6 = new Guna.UI.Animation.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pnLogin = new Guna.UI2.WinForms.Guna2Panel();
-            this.bt_goto_SignUp = new Guna.UI.WinForms.GunaButton();
+            this.chb_alogin = new Guna.UI.WinForms.GunaCheckBox();
             this.bt_login = new Guna.UI.WinForms.GunaGradientButton();
             this.logTxtBox_passwd = new Guna.UI.WinForms.GunaTextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -40,7 +40,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.picturebox_RS_login = new Guna.UI2.WinForms.Guna2PictureBox();
             this.gunaTransition1 = new Guna.UI.WinForms.GunaTransition(this.components);
             this.pnSignUP = new Guna.UI2.WinForms.Guna2Panel();
             this.regTxtBox_login = new Guna.UI.WinForms.GunaTextBox();
@@ -53,16 +52,17 @@
             this.regTxtBox_email = new Guna.UI.WinForms.GunaTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.bt_goto_Login = new Guna.UI.WinForms.GunaButton();
-            this.picturebox_RS_signUp = new Guna.UI2.WinForms.Guna2PictureBox();
             this.gunaDragControl1 = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.gunaDragControl2 = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.gunaDragControl3 = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.gunaDragControl4 = new Guna.UI.WinForms.GunaDragControl(this.components);
-            this.chb_alogin = new Guna.UI.WinForms.GunaCheckBox();
+            this.bt_goto_SignUp = new Guna.UI.WinForms.GunaButton();
+            this.picturebox_RS_login = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bt_goto_Login = new Guna.UI.WinForms.GunaButton();
+            this.picturebox_RS_signUp = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnLogin.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picturebox_RS_login)).BeginInit();
             this.pnSignUP.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picturebox_RS_login)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturebox_RS_signUp)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,32 +86,17 @@
             this.pnLogin.Size = new System.Drawing.Size(846, 529);
             this.pnLogin.TabIndex = 0;
             // 
-            // bt_goto_SignUp
+            // chb_alogin
             // 
-            this.bt_goto_SignUp.AnimationHoverSpeed = 0.07F;
-            this.bt_goto_SignUp.AnimationSpeed = 0.03F;
-            this.bt_goto_SignUp.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(4)))), ((int)(((byte)(52)))));
-            this.bt_goto_SignUp.BorderColor = System.Drawing.Color.Black;
-            this.gunaTransition1.SetDecoration(this.bt_goto_SignUp, Guna.UI.Animation.DecorationType.None);
-            this.bt_goto_SignUp.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.bt_goto_SignUp.FocusedColor = System.Drawing.Color.Empty;
-            this.bt_goto_SignUp.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bt_goto_SignUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(178)))), ((int)(((byte)(249)))));
-            this.bt_goto_SignUp.Image = ((System.Drawing.Image)(resources.GetObject("bt_goto_SignUp.Image")));
-            this.bt_goto_SignUp.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.bt_goto_SignUp.ImageSize = new System.Drawing.Size(25, 25);
-            this.bt_goto_SignUp.Location = new System.Drawing.Point(753, 12);
-            this.bt_goto_SignUp.Name = "bt_goto_SignUp";
-            this.bt_goto_SignUp.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(4)))), ((int)(((byte)(52)))));
-            this.bt_goto_SignUp.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.bt_goto_SignUp.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(83)))), ((int)(((byte)(255)))));
-            this.bt_goto_SignUp.OnHoverImage = null;
-            this.bt_goto_SignUp.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(4)))), ((int)(((byte)(52)))));
-            this.bt_goto_SignUp.Size = new System.Drawing.Size(93, 27);
-            this.bt_goto_SignUp.TabIndex = 8;
-            this.bt_goto_SignUp.Text = "Sign UP";
-            this.bt_goto_SignUp.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.bt_goto_SignUp.Click += new System.EventHandler(this.bt_goto_SignUp_Click);
+            this.chb_alogin.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(4)))), ((int)(((byte)(52)))));
+            this.chb_alogin.CheckedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(4)))), ((int)(((byte)(52)))));
+            this.chb_alogin.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(4)))), ((int)(((byte)(52)))));
+            this.gunaTransition1.SetDecoration(this.chb_alogin, Guna.UI.Animation.DecorationType.None);
+            this.chb_alogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(4)))), ((int)(((byte)(52)))));
+            this.chb_alogin.Location = new System.Drawing.Point(353, 497);
+            this.chb_alogin.Name = "chb_alogin";
+            this.chb_alogin.Size = new System.Drawing.Size(20, 20);
+            this.chb_alogin.TabIndex = 9;
             // 
             // bt_login
             // 
@@ -158,11 +143,12 @@
             this.logTxtBox_passwd.Location = new System.Drawing.Point(491, 282);
             this.logTxtBox_passwd.MaxLength = 12;
             this.logTxtBox_passwd.Name = "logTxtBox_passwd";
-            this.logTxtBox_passwd.PasswordChar = '*';
+            this.logTxtBox_passwd.PasswordChar = '●';
             this.logTxtBox_passwd.Radius = 2;
             this.logTxtBox_passwd.SelectedText = "";
             this.logTxtBox_passwd.Size = new System.Drawing.Size(248, 47);
             this.logTxtBox_passwd.TabIndex = 6;
+            this.logTxtBox_passwd.UseSystemPasswordChar = true;
             // 
             // label4
             // 
@@ -233,38 +219,26 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Here you can Login";
             // 
-            // picturebox_RS_login
-            // 
-            this.gunaTransition1.SetDecoration(this.picturebox_RS_login, Guna.UI.Animation.DecorationType.None);
-            this.picturebox_RS_login.Image = ((System.Drawing.Image)(resources.GetObject("picturebox_RS_login.Image")));
-            this.picturebox_RS_login.Location = new System.Drawing.Point(0, 0);
-            this.picturebox_RS_login.Name = "picturebox_RS_login";
-            this.picturebox_RS_login.ShadowDecoration.Parent = this.picturebox_RS_login;
-            this.picturebox_RS_login.Size = new System.Drawing.Size(373, 529);
-            this.picturebox_RS_login.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.picturebox_RS_login.TabIndex = 0;
-            this.picturebox_RS_login.TabStop = false;
-            // 
             // gunaTransition1
             // 
             this.gunaTransition1.AnimationType = Guna.UI.Animation.AnimationType.Custom;
             this.gunaTransition1.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 1;
-            animation2.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 2F;
-            animation2.TransparencyCoeff = 0F;
-            this.gunaTransition1.DefaultAnimation = animation2;
+            animation6.AnimateOnlyDifferences = true;
+            animation6.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.BlindCoeff")));
+            animation6.LeafCoeff = 0F;
+            animation6.MaxTime = 1F;
+            animation6.MinTime = 0F;
+            animation6.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicCoeff")));
+            animation6.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicShift")));
+            animation6.MosaicSize = 1;
+            animation6.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
+            animation6.RotateCoeff = 0F;
+            animation6.RotateLimit = 0F;
+            animation6.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.ScaleCoeff")));
+            animation6.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.SlideCoeff")));
+            animation6.TimeCoeff = 2F;
+            animation6.TransparencyCoeff = 0F;
+            this.gunaTransition1.DefaultAnimation = animation6;
             // 
             // pnSignUP
             // 
@@ -336,11 +310,12 @@
             this.regTxtBox_confirmPasswd.Location = new System.Drawing.Point(491, 368);
             this.regTxtBox_confirmPasswd.MaxLength = 12;
             this.regTxtBox_confirmPasswd.Name = "regTxtBox_confirmPasswd";
-            this.regTxtBox_confirmPasswd.PasswordChar = '*';
+            this.regTxtBox_confirmPasswd.PasswordChar = '●';
             this.regTxtBox_confirmPasswd.Radius = 2;
             this.regTxtBox_confirmPasswd.SelectedText = "";
             this.regTxtBox_confirmPasswd.Size = new System.Drawing.Size(248, 47);
             this.regTxtBox_confirmPasswd.TabIndex = 10;
+            this.regTxtBox_confirmPasswd.UseSystemPasswordChar = true;
             // 
             // label9
             // 
@@ -399,11 +374,12 @@
             this.regTxtBox_passwd.Location = new System.Drawing.Point(491, 282);
             this.regTxtBox_passwd.MaxLength = 12;
             this.regTxtBox_passwd.Name = "regTxtBox_passwd";
-            this.regTxtBox_passwd.PasswordChar = '*';
+            this.regTxtBox_passwd.PasswordChar = '●';
             this.regTxtBox_passwd.Radius = 2;
             this.regTxtBox_passwd.SelectedText = "";
             this.regTxtBox_passwd.Size = new System.Drawing.Size(248, 47);
             this.regTxtBox_passwd.TabIndex = 6;
+            this.regTxtBox_passwd.UseSystemPasswordChar = true;
             // 
             // label5
             // 
@@ -462,6 +438,61 @@
             this.label8.TabIndex = 1;
             this.label8.Text = "Create account";
             // 
+            // gunaDragControl1
+            // 
+            this.gunaDragControl1.TargetControl = this.pnSignUP;
+            // 
+            // gunaDragControl2
+            // 
+            this.gunaDragControl2.TargetControl = this.pnLogin;
+            // 
+            // gunaDragControl3
+            // 
+            this.gunaDragControl3.TargetControl = this.picturebox_RS_signUp;
+            // 
+            // gunaDragControl4
+            // 
+            this.gunaDragControl4.TargetControl = this.picturebox_RS_login;
+            // 
+            // bt_goto_SignUp
+            // 
+            this.bt_goto_SignUp.AnimationHoverSpeed = 0.07F;
+            this.bt_goto_SignUp.AnimationSpeed = 0.03F;
+            this.bt_goto_SignUp.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(4)))), ((int)(((byte)(52)))));
+            this.bt_goto_SignUp.BorderColor = System.Drawing.Color.Black;
+            this.gunaTransition1.SetDecoration(this.bt_goto_SignUp, Guna.UI.Animation.DecorationType.None);
+            this.bt_goto_SignUp.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.bt_goto_SignUp.FocusedColor = System.Drawing.Color.Empty;
+            this.bt_goto_SignUp.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bt_goto_SignUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(178)))), ((int)(((byte)(249)))));
+            this.bt_goto_SignUp.Image = ((System.Drawing.Image)(resources.GetObject("bt_goto_SignUp.Image")));
+            this.bt_goto_SignUp.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.bt_goto_SignUp.ImageSize = new System.Drawing.Size(25, 25);
+            this.bt_goto_SignUp.Location = new System.Drawing.Point(753, 12);
+            this.bt_goto_SignUp.Name = "bt_goto_SignUp";
+            this.bt_goto_SignUp.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(4)))), ((int)(((byte)(52)))));
+            this.bt_goto_SignUp.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.bt_goto_SignUp.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(83)))), ((int)(((byte)(255)))));
+            this.bt_goto_SignUp.OnHoverImage = null;
+            this.bt_goto_SignUp.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(4)))), ((int)(((byte)(52)))));
+            this.bt_goto_SignUp.Size = new System.Drawing.Size(93, 27);
+            this.bt_goto_SignUp.TabIndex = 8;
+            this.bt_goto_SignUp.Text = "Sign UP";
+            this.bt_goto_SignUp.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.bt_goto_SignUp.Click += new System.EventHandler(this.bt_goto_SignUp_Click);
+            // 
+            // picturebox_RS_login
+            // 
+            this.gunaTransition1.SetDecoration(this.picturebox_RS_login, Guna.UI.Animation.DecorationType.None);
+            this.picturebox_RS_login.Image = ((System.Drawing.Image)(resources.GetObject("picturebox_RS_login.Image")));
+            this.picturebox_RS_login.Location = new System.Drawing.Point(0, 0);
+            this.picturebox_RS_login.Name = "picturebox_RS_login";
+            this.picturebox_RS_login.ShadowDecoration.Parent = this.picturebox_RS_login;
+            this.picturebox_RS_login.Size = new System.Drawing.Size(373, 529);
+            this.picturebox_RS_login.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picturebox_RS_login.TabIndex = 0;
+            this.picturebox_RS_login.TabStop = false;
+            // 
             // bt_goto_Login
             // 
             this.bt_goto_Login.AnimationHoverSpeed = 0.07F;
@@ -501,34 +532,6 @@
             this.picturebox_RS_signUp.TabIndex = 0;
             this.picturebox_RS_signUp.TabStop = false;
             // 
-            // gunaDragControl1
-            // 
-            this.gunaDragControl1.TargetControl = this.pnSignUP;
-            // 
-            // gunaDragControl2
-            // 
-            this.gunaDragControl2.TargetControl = this.pnLogin;
-            // 
-            // gunaDragControl3
-            // 
-            this.gunaDragControl3.TargetControl = this.picturebox_RS_signUp;
-            // 
-            // gunaDragControl4
-            // 
-            this.gunaDragControl4.TargetControl = this.picturebox_RS_login;
-            // 
-            // chb_alogin
-            // 
-            this.chb_alogin.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(4)))), ((int)(((byte)(52)))));
-            this.chb_alogin.CheckedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(4)))), ((int)(((byte)(52)))));
-            this.chb_alogin.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(4)))), ((int)(((byte)(52)))));
-            this.gunaTransition1.SetDecoration(this.chb_alogin, Guna.UI.Animation.DecorationType.None);
-            this.chb_alogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(4)))), ((int)(((byte)(52)))));
-            this.chb_alogin.Location = new System.Drawing.Point(353, 497);
-            this.chb_alogin.Name = "chb_alogin";
-            this.chb_alogin.Size = new System.Drawing.Size(20, 20);
-            this.chb_alogin.TabIndex = 9;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -545,9 +548,9 @@
             this.Text = "Rental Service";
             this.pnLogin.ResumeLayout(false);
             this.pnLogin.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picturebox_RS_login)).EndInit();
             this.pnSignUP.ResumeLayout(false);
             this.pnSignUP.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picturebox_RS_login)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturebox_RS_signUp)).EndInit();
             this.ResumeLayout(false);
 
