@@ -55,31 +55,36 @@ namespace RentalService
             else
             {
                 DataGrid_cars.Rows.Clear();
+                List<RentalCar> filtredCars = new List<RentalCar>();
                 foreach (var car in cars)
                 {
-                    if (chb_available.Checked && car.Available)
-                        AddCarToDataGrid(car);
+                    if (chb_available.Checked && car.Available && !filtredCars.Contains(car))
+                        filtredCars.Add(car);
 
-                    if (chb_sportCoupe.Checked && car.Type == chb_sportCoupe.Text)
-                        AddCarToDataGrid(car);
+                    if (chb_sportCoupe.Checked && car.Type == chb_sportCoupe.Text && !filtredCars.Contains(car))
+                        filtredCars.Add(car);
 
-                    if (chb_suv.Checked && car.Type == chb_suv.Text)
-                        AddCarToDataGrid(car);
+                    if (chb_suv.Checked && car.Type == chb_suv.Text && !filtredCars.Contains(car))
+                        filtredCars.Add(car);
 
-                    if (chb_stationWagon.Checked && car.Type == chb_stationWagon.Text)
-                        AddCarToDataGrid(car);
+                    if (chb_stationWagon.Checked && car.Type == chb_stationWagon.Text && !filtredCars.Contains(car))
+                        filtredCars.Add(car);
 
-                    if (chb_minivan.Checked && car.Type == chb_minivan.Text)
-                        AddCarToDataGrid(car);
+                    if (chb_minivan.Checked && car.Type == chb_minivan.Text && !filtredCars.Contains(car))
+                        filtredCars.Add(car);
 
-                    if (chb_electricCar.Checked && car.Type == chb_electricCar.Text)
-                        AddCarToDataGrid(car);
+                    if (chb_electricCar.Checked && car.Type == chb_electricCar.Text && !filtredCars.Contains(car))
+                        filtredCars.Add(car);
 
-                    if (chb_cabriolet.Checked && car.Type == chb_cabriolet.Text)
-                        AddCarToDataGrid(car);
+                    if (chb_cabriolet.Checked && car.Type == chb_cabriolet.Text && !filtredCars.Contains(car))
+                        filtredCars.Add(car);
 
-                    if (chb_sedan.Checked && car.Type == chb_sedan.Text)
-                        AddCarToDataGrid(car);
+                    if (chb_sedan.Checked && car.Type == chb_sedan.Text && !filtredCars.Contains(car))
+                        filtredCars.Add(car);
+                }
+                foreach (var car in filtredCars)
+                {
+                    AddCarToDataGrid(car);
                 }
             }
         }
