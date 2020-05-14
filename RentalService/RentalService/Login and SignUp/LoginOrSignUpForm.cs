@@ -102,6 +102,7 @@ namespace RentalService
                 user.Serialize();
                 RentalSerivce rentalSerivce = new RentalSerivce(user);
                 this.Hide();
+                pnLogin.BringToFront();
                 if (rentalSerivce.ShowDialog() == DialogResult.Retry)
                     this.Show();
                 else

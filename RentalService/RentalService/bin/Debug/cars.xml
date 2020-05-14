@@ -3,7 +3,7 @@
   <RentalCar>
     <Brand>Mercedess</Brand>
     <Model>c63 amg</Model>
-    <LicensePlate>OO8870OO</LicensePlate>
+    <LicensePlate>AB5673HK</LicensePlate>
     <Type>Sport coupe</Type>
     <Available>true</Available>
     <AvailableFrom>2020-05-13T22:59:27.5813822+03:00</AvailableFrom>
@@ -28,7 +28,7 @@
     <Available>true</Available>
     <AvailableFrom>2020-05-14T02:22:00.8873319+03:00</AvailableFrom>
     <RentedID>0</RentedID>
-    <PricePerDay>499</PricePerDay>
+    <PricePerDay>965</PricePerDay>
   </RentalCar>
   <RentalCar>
     <Brand>Toyota</Brand>
@@ -49,5 +49,125 @@
     <AvailableFrom>2020-05-14T02:23:18.3432069+03:00</AvailableFrom>
     <RentedID>0</RentedID>
     <PricePerDay>359</PricePerDay>
+  </RentalCar>
+  <RentalCar>
+    <Brand>Mercedes</Brand>
+    <Model>c300</Model>
+    <LicensePlate>AA0234AA</LicensePlate>
+    <Type>Sedan</Type>
+    <Available>true</Available>
+    <AvailableFrom>2020-05-14T13:31:08.3120535+03:00</AvailableFrom>
+    <RentedID>0</RentedID>
+    <PricePerDay>699</PricePerDay>
+  </RentalCar>
+  <RentalCar>
+    <Brand>BMW</Brand>
+    <Model>X1</Model>
+    <LicensePlate>BH1243AK</LicensePlate>
+    <Type>SUV</Type>
+    <Available>true</Available>
+    <AvailableFrom>2020-05-14T13:33:22.3056559+03:00</AvailableFrom>
+    <RentedID>0</RentedID>
+    <PricePerDay>450</PricePerDay>
+  </RentalCar>
+  <RentalCar>
+    <Brand>Audi</Brand>
+    <Model>Q2</Model>
+    <LicensePlate>AH9234BH</LicensePlate>
+    <Type>SUV</Type>
+    <Available>true</Available>
+    <AvailableFrom>2020-05-14T13:54:26.6566468+03:00</AvailableFrom>
+    <RentedID>0</RentedID>
+    <PricePerDay>529</PricePerDay>
+  </RentalCar>
+  <RentalCar>
+    <Brand>Volkswagen</Brand>
+    <Model>Passat</Model>
+    <LicensePlate>AA5539BH</LicensePlate>
+    <Type>Station wagon</Type>
+    <Available>true</Available>
+    <AvailableFrom>2020-05-14T13:55:02.5547716+03:00</AvailableFrom>
+    <RentedID>0</RentedID>
+    <PricePerDay>489</PricePerDay>
+  </RentalCar>
+  <RentalCar>
+    <Brand>Honda</Brand>
+    <Model>Acord</Model>
+    <LicensePlate>AH3456BH</LicensePlate>
+    <Type>Station wagon</Type>
+    <Available>true</Available>
+    <AvailableFrom>2020-05-14T13:56:17.2517689+03:00</AvailableFrom>
+    <RentedID>0</RentedID>
+    <PricePerDay>495</PricePerDay>
+  </RentalCar>
+  <RentalCar>
+    <Brand>Volkswagen</Brand>
+    <Model>T5</Model>
+    <LicensePlate>BK2346AH</LicensePlate>
+    <Type>Minivan</Type>
+    <Available>true</Available>
+    <AvailableFrom>2020-05-14T13:57:09.7233341+03:00</AvailableFrom>
+    <RentedID>0</RentedID>
+    <PricePerDay>599</PricePerDay>
+  </RentalCar>
+  <RentalCar>
+    <Brand>Renault</Brand>
+    <Model>Monaco</Model>
+    <LicensePlate>BK7534BH</LicensePlate>
+    <Type>Cabriolet</Type>
+    <Available>false</Available>
+    <AvailableFrom>2020-05-16T15:33:49.9310032+03:00</AvailableFrom>
+    <RentedID>18</RentedID>
+    <PricePerDay>600</PricePerDay>
+  </RentalCar>
+  <RentalCar>
+    <Brand>BMW</Brand>
+    <Model>328</Model>
+    <LicensePlate>BH9341AA</LicensePlate>
+    <Type>Cabriolet</Type>
+    <Available>true</Available>
+    <AvailableFrom>2020-05-14T13:58:47.1360847+03:00</AvailableFrom>
+    <RentedID>0</RentedID>
+    <PricePerDay>629</PricePerDay>
+  </RentalCar>
+  <RentalCar>
+    <Brand>Tesla</Brand>
+    <Model>S</Model>
+    <LicensePlate>BK3453AA</LicensePlate>
+    <Type>Electric car</Type>
+    <Available>true</Available>
+    <AvailableFrom>2020-05-14T14:00:02.8330969+03:00</AvailableFrom>
+    <RentedID>0</RentedID>
+    <PricePerDay>800</PricePerDay>
+  </RentalCar>
+  <RentalCar>
+    <Brand>Mercedes</Brand>
+    <Model>A45</Model>
+    <LicensePlate>BK1234BK</LicensePlate>
+    <Type>Cabriolet</Type>
+    <Available>true</Available>
+    <AvailableFrom>2020-05-14T14:02:36.8579273+03:00</AvailableFrom>
+    <RentedID>0</RentedID>
+    <PricePerDay>564</PricePerDay>
+  </RentalCar>
+  <RentalCar>
+    <Brand>Tesla</Brand>
+    <Model>X</Model>
+    <LicensePlate>AA8778BK</LicensePlate>
+    <Type>Electric car</Type>
+    <Available>true</Available>
+    <AvailableFrom>2020-05-14T14:03:31.1247161+03:00</AvailableFrom>
+    <RentedID>0</RentedID>
+    <PricePerDay>980</PricePerDay>
+  </RentalCar>
+  <RentalCar>
+    <Brand>Tesla</Brand>
+    <Model>3</Model>
+    <LicensePlate>BK2105BK</LicensePlate>
+    <Type>Electric car</Type>
+    <Available>true</Available>
+    <AvailableFrom>2020-05-14T14:04:25.6736121+03:00</AvailableFrom>
+    <RentedID>0</RentedID>
+    <PricePerDay>725</PricePerDay>
   </RentalCar>
 </ArrayOfRentalCar>

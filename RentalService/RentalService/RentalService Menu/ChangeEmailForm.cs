@@ -40,7 +40,6 @@ namespace RentalService
                     while (!reader.EndOfStream)
                         emails.Add(reader.ReadLine());
                 }
-                emails.Remove(user.Email);
                 var email_reg = new Regex(@"^[a-z,A-Z,0-9](\.?[a-z,A-Z,0-9]){5,}@[a-z]{2,}\.(com|net|ua|ru)$");
                 if (email_reg.IsMatch(txtBox_newEmail.Text))
                     email_valide = true;
@@ -57,8 +56,17 @@ namespace RentalService
                 }
                 if(email_valide)
                 {
+                    emails.Remove(user.Email);
                     user.ChangeEmail(txtBox_newEmail.Text);
                     user.Serialize();
+                    emails.Add(txtBox_newEmail.Text);
+                    using (var writer = new StreamWriter("emails/emails"))
+                    {
+                        foreach (var email in emails)
+                        {
+                            writer.WriteLine(email.ToString());
+                        }
+                    }
                     MsgBox msgBox = new MsgBox("Changing email", "Email changed successfully");
                     msgBox.ShowDialog();
                     Desktop.BringToFront();

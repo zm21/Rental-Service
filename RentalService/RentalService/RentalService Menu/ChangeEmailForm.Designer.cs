@@ -108,9 +108,9 @@
             this.txtBox_newEmail.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.txtBox_newEmail.ForeColor = System.Drawing.Color.White;
             this.txtBox_newEmail.Location = new System.Drawing.Point(322, 195);
-            this.txtBox_newEmail.MaxLength = 12;
+            this.txtBox_newEmail.MaxLength = 30;
             this.txtBox_newEmail.Name = "txtBox_newEmail";
-            this.txtBox_newEmail.PasswordChar = '*';
+            this.txtBox_newEmail.PasswordChar = '\0';
             this.txtBox_newEmail.Radius = 2;
             this.txtBox_newEmail.SelectedText = "";
             this.txtBox_newEmail.Size = new System.Drawing.Size(248, 47);
