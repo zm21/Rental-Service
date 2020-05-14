@@ -101,8 +101,8 @@ namespace RentalService
                 User user = new User(regTxtBox_login.Text, regTxtBox_email.Text, regTxtBox_confirmPasswd.Text);
                 user.Serialize();
                 RentalSerivce rentalSerivce = new RentalSerivce(user);
-                this.Hide();
                 pnLogin.BringToFront();
+                this.Hide();
                 if (rentalSerivce.ShowDialog() == DialogResult.Retry)
                     this.Show();
                 else
